@@ -1,8 +1,12 @@
 :root {
+  /* colors */
   --brand-color: #00bfff;
   --brand-color-2: #17afe2;
   --text-color: #666666;
   --text-color-dark: #313131;
   --white: #ffffff;
   --black: #000000;
+
+  /* font */
+  --font-inter: "Inter", sans-serif;
 }

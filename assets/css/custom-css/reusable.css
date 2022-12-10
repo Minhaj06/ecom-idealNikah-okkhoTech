@@ -17,6 +17,10 @@
   color: var(--white) !important;
   background-color: var(--brand-color) !important;
 }
+.bg-white {
+  color: var(--brand-color) !important;
+  background-color: var(--white) !important;
+}
 
 /* buttons */
 .button {
@@ -31,8 +35,25 @@
 }
 
 .button:hover {
-  background-color: var(--brand-color-2);
+  background-color: var(--brand-color);
   color: var(--white);
+  opacity: 85%;
+}
+
+.button-bg-white {
+  background-color: var(--white);
+  box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.12);
+  color: var(--brand-color);
+  border: 2px solid var(--white);
+  font-size: 1.6rem;
+  padding: 0.5rem 1.2rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+}
+
+.button-bg-white:hover {
+  background-color: var(--white);
+  color: var(--brand-color);
   opacity: 85%;
 }
 
@@ -49,4 +70,27 @@
 .button-outline:hover {
   background-color: var(--brand-color);
   color: var(--white);
+}
+
+/* fonts */
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.sec-title {
+  color: var(--text-color-dark);
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 2;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
 }

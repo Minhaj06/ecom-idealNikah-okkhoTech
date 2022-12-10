@@ -1,3 +1,17 @@
 @import url("custom-css/reset.css");
 @import url("custom-css/variables.css");
 @import url("custom-css/reusable.css");
+@import url("custom-css/header.css");
+@import url("custom-css/footer.css");
+
+/* Home Banner */
+.carousel-indicators [data-bs-target] {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+/* Featured Categories */
+.featured-categories .featured-cat-card {
+  border: 2px solid #c2c2c242;
+}

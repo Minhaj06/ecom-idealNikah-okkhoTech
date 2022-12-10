@@ -12,22 +12,389 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Ecom-IdealNikah Home</title>
   </head>
 
   <body>
     <!-- Header Starts Here -->
-    <header class="header" id="header">
+    <header class="header mb-5" id="header">
       <div class="container">
-        <div class="topbar">hello</div>
-        <div class="menubar">hello</div>
+        <!-- topbar -->
+        <div
+          class="topbar d-lg-flex justify-content-between align-items-center border-bottom py-3"
+        >
+          <!-- logo -->
+          <a href="">
+            <img src="images/logo.svg" alt="" class="logo" />
+          </a>
+
+          <!-- search box -->
+          <div class="search-box position-relative fs-3">
+            <input
+              class="px-4 py-3 rounded-3 w-100"
+              type="search"
+              name=""
+              id=""
+              placeholder="Search..."
+            />
+            <button class="btn fs-3 position-absolute top-0 end-0 h-100 pt-3 pe-3 text-color">
+              <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+            </button>
+          </div>
+
+          <!-- icons -->
+          <div
+            class="topbar-icons text-capitalize d-flex justify-content-end align-items-center gap-5"
+          >
+            <div class="topbar-icon-group">
+              <a class="text-black" href="">
+                <div class="floating-text-icon d-inline-block position-relative">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="floating-num">5</span>
+                </div>
+                <span class="icon-name">wishlist</span>
+              </a>
+            </div>
+            <div class="topbar-icon-group">
+              <a class="text-black" href="">
+                <div class="floating-text-icon d-inline-block position-relative">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="floating-num">5</span>
+                </div>
+                <span class="icon-name">cart</span>
+              </a>
+            </div>
+            <a href="" class="btn button fs-2"> login <i class="fa-regular fa-user"></i> </a>
+          </div>
+        </div>
+
+        <!-- menubar -->
+        <div class="row align-items-center menubar border-bottom py-3">
+          <div class="col-lg-3">
+            <a href="" class="btn button p-3">
+              <i class="fa-solid fa-table-cells-large"></i>
+              browse all catagories
+            </a>
+          </div>
+
+          <div class="col-lg-9">
+            <ul class="menu text-capitalize">
+              <li class="d-inline-block me-5">
+                <a href="">home</a>
+              </li>
+              <li class="d-inline-block me-5">
+                <a href="">about</a>
+              </li>
+              <li class="d-inline-block me-5">
+                <a href="">shop</a>
+              </li>
+              <li class="d-inline-block me-5">
+                <a href="">vendors</a>
+              </li>
+              <li class="d-inline-block me-5">
+                <a href="">mega menu</a>
+              </li>
+              <li class="d-inline-block me-5">
+                <a href="">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Header Ends Here -->
 
+    <!-- Home Banner Slider Starts Here -->
+    <section class="home-banner">
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/home-banner-slider-bg.jpg" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block top-50 start-0 translate-middle-y text-start w-100 p-5 text-capitalize"
+                style="bottom: auto"
+              >
+                <h5 class="fs-2 font-weight-normal lh-lg">Shopping with us,</h5>
+                <h1 class="font-weight-600 mb-5" style="font-size: 5rem">
+                  your marriage <br />
+                  will be more enjoyable. <br />
+                  in shaa Allah
+                </h1>
+
+                <a href="" class="btn button-bg-white px-5 py-3">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  shop now
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/home-banner-slider-bg.jpg" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block top-50 start-0 translate-middle-y text-start w-100 p-5 text-capitalize"
+                style="bottom: auto"
+              >
+                <h5 class="fs-2 font-weight-normal lh-lg">Shopping with us,</h5>
+                <h1 class="font-weight-600 mb-5" style="font-size: 5rem">
+                  your marriage <br />
+                  will be more enjoyable. <br />
+                  in shaa Allah
+                </h1>
+
+                <a href="" class="btn button-bg-white px-5 py-3">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  shop now
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/home-banner-slider-bg.jpg" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block top-50 start-0 translate-middle-y text-start w-100 p-5 text-capitalize"
+                style="bottom: auto"
+              >
+                <h5 class="fs-2 font-weight-normal lh-lg">Shopping with us,</h5>
+                <h1 class="font-weight-600 mb-5" style="font-size: 5rem">
+                  your marriage <br />
+                  will be more enjoyable. <br />
+                  in shaa Allah
+                </h1>
+
+                <a href="" class="btn button-bg-white px-5 py-3">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  shop now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Banner Slider Starts Here -->
+
+    <!-- Featured Catagories Section Starts Here -->
+    <section class="featured-categories">
+      <div class="container text-capitalize">
+        <h2 class="sec-title">featured categories</h2>
+
+        <div class="row text-center">
+          <div class="col-xl-2">
+            <div
+              class="featured-cat-card p-4 rounded-3 h-100 d-flex flex-column justify-content-end shadow-lg"
+              style="background-color: #f2fce4"
+            >
+              <div>
+                <img src="images/featured-cat-1.png" alt="" class="img-fluid mb-4" />
+              </div>
+              <div>
+                <h5 class="fs-4 text-color-dark font-weight-600 mb-3">sherwani</h5>
+                <h6 class="fs-5">105 items</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2">
+            <div
+              class="featured-cat-card p-4 rounded-3 h-100 d-flex flex-column justify-content-end shadow-lg"
+              style="background-color: #fffceb"
+            >
+              <div>
+                <img src="images/featured-cat-2.png" alt="" class="img-fluid mb-4" />
+              </div>
+              <div>
+                <h5 class="fs-4 text-color-dark font-weight-600 mb-3">sherwani</h5>
+                <h6 class="fs-5">105 items</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2">
+            <div
+              class="featured-cat-card p-4 rounded-3 h-100 d-flex flex-column justify-content-end shadow-lg"
+              style="background-color: #ecffec"
+            >
+              <div>
+                <img src="images/featured-cat-3.png" alt="" class="img-fluid mb-4" />
+              </div>
+              <div>
+                <h5 class="fs-4 text-color-dark font-weight-600 mb-3">sherwani</h5>
+                <h6 class="fs-5">105 items</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2">
+            <div
+              class="featured-cat-card p-4 rounded-3 h-100 d-flex flex-column justify-content-end shadow-lg"
+              style="background-color: #feefea"
+            >
+              <div>
+                <img src="images/featured-cat-4.png" alt="" class="img-fluid mb-4" />
+              </div>
+              <div>
+                <h5 class="fs-4 text-color-dark font-weight-600 mb-3">sherwani</h5>
+                <h6 class="fs-5">105 items</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2">
+            <div
+              class="featured-cat-card p-4 rounded-3 h-100 d-flex flex-column justify-content-end shadow-lg"
+              style="background-color: #fff3ff"
+            >
+              <div>
+                <img src="images/featured-cat-5.png" alt="" class="img-fluid mb-4" />
+              </div>
+              <div>
+                <h5 class="fs-4 text-color-dark font-weight-600 mb-3">sherwani</h5>
+                <h6 class="fs-5">105 items</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2">
+            <div
+              class="featured-cat-card p-4 rounded-3 h-100 d-flex flex-column justify-content-end shadow-lg"
+              style="background-color: #f2fce4"
+            >
+              <div>
+                <img src="images/featured-cat-6.png" alt="" class="img-fluid mb-4" />
+              </div>
+              <div>
+                <h5 class="fs-4 text-color-dark font-weight-600 mb-3">sherwani</h5>
+                <h6 class="fs-5">105 items</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Catagories Section Ends Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="footer bg-brand py-5">
+      <div class="container text-capitalize">
+        <div class="row mb-5">
+          <div class="col-lg-3">
+            <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+            <ul class="fs-3">
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">about us</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">How to Buy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">idealNikah Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+            <ul class="fs-3">
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Wish List</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Order History</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Order Tracking</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+            <ul class="fs-3">
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Privacy Policy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Shipping Policy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Payment Policy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Returns & Refunds</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Terms & Conditions </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h3 class="fs-1 font-weight-normal mb-5 pb-4">join with us</h3>
+
+            <div class="d-flex align-items-center gap-5 py-5">
+              <h3 class="fs-2 font-weight-normal">Contact By</h3>
+              <div>
+                <a href="" class="text-white fs-2 me-3">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white fs-2 me-3">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="text-white fs-2 me-3">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="text-white fs-2 me-3">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+            <a href="">
+              <img class="footer-logo" src="images/footer-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 fs-2 text-center">Copyright © 2022 idealnikah.com</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
