@@ -15,3 +15,94 @@
 .featured-categories .featured-cat-card {
   border: 2px solid #c2c2c242;
 }
+
+section.featured-categories::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(../../images/section-vector-left-bottom.svg);
+  background-size: max(200px, 35%);
+  background-position-x: left;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: max(10rem, 100%);
+  z-index: -1;
+}
+
+section.featured-categories::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("../../images/section-vector-right-top.svg");
+  background-size: max(200px, 35%);
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: max(10rem, 100%);
+  z-index: -1;
+}
+
+/* Popular Products */
+section.popular-products::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("../../images/section-vector-right-bottom.svg");
+  background-size: max(200px, 35%);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: max(10rem, 100%);
+  z-index: -1;
+}
+
+/* Most Valuable Producs */
+section.most-valuable-products .most-valuable-product-card {
+  border-radius: 1rem;
+  border: 2px solid #c2c2c242;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Trending Products */
+section.trending-products::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(../../images/section-vector-left-top.svg);
+  background-size: max(200px, 35%);
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: max(10rem, 100%);
+  z-index: -1;
+}
+
+section.trending-products::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("../../images/section-vector-right-bottom.svg");
+  background-size: max(200px, 35%);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: max(10rem, 100%);
+  z-index: -1;
+}

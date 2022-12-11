@@ -1,5 +1,5 @@
 /* colors */
-.brad-color {
+.brand-color {
   color: var(--brand-color);
 }
 .text-color {
@@ -17,10 +17,10 @@
   color: var(--white) !important;
   background-color: var(--brand-color) !important;
 }
-.bg-white {
+/* .bg-white {
   color: var(--brand-color) !important;
   background-color: var(--white) !important;
-}
+} */
 
 /* buttons */
 .button {
@@ -93,4 +93,43 @@
   line-height: 2;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
+}
+
+/* Star Rating */
+
+.stars i {
+  color: var(--rating-color);
+}
+
+.stars i.not-given {
+  color: var(--text-color);
+  opacity: 50%;
+}
+
+/* Product Card */
+.product-card {
+  border: 1px solid #9a999942;
+  border-radius: 0.8rem;
+}
+.product-card:hover {
+  border-color: var(--brand-color);
+}
+
+/* Offer Hightlight */
+.offer-highlight {
+  position: absolute;
+  top: 20px;
+  left: -35px;
+  background: var(--brand-color);
+  color: var(--white);
+  padding: 2px 50px;
+  font-size: 1.4rem;
+  transform: rotate(-45deg);
+}
+
+/* View All Button */
+.view-all-btn {
+  font-size: 2rem;
+  padding: 0.7rem 5rem;
+  border-radius: 1rem;
 }
