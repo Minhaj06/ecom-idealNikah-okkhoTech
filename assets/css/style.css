@@ -106,3 +106,42 @@ section.trending-products::after {
   height: max(10rem, 100%);
   z-index: -1;
 }
+
+/* Cilents Review Section Starts Here */
+section.clients-review .carousel-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("../../images/double-quotes.svg");
+  background-size: max(5rem, 10%);
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: max(5rem, 100%);
+  z-index: -1;
+}
+
+section.clients-review .carousel-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(../../images/double-quotes.svg);
+  background-size: max(5rem, 10%);
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: max(5rem, 100%);
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+section.clients-review .carousel-indicators [data-bs-target] {
+  background-color: var(--brand-color);
+}
+/* Cilents Review Section Ends Here */

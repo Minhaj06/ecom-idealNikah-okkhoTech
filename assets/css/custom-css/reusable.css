@@ -2,6 +2,9 @@
 .brand-color {
   color: var(--brand-color);
 }
+.brand-color-light {
+  color: var(--brand-color-light);
+}
 .text-color {
   color: var(--text-color);
 }
@@ -16,6 +19,9 @@
 .bg-brand {
   color: var(--white) !important;
   background-color: var(--brand-color) !important;
+}
+.bg-brand-light {
+  background-color: var(--brand-color-light);
 }
 /* .bg-white {
   color: var(--brand-color) !important;
@@ -93,6 +99,14 @@
   line-height: 2;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
+}
+
+/* Border Radius */
+.rounded-4 {
+  border-radius: 0.75rem;
+}
+.rounded-5 {
+  border-radius: 1rem;
 }
 
 /* Star Rating */
