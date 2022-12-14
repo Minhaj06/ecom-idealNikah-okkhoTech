@@ -243,3 +243,17 @@ section.clients-review .carousel-indicators [data-bs-target] {
   color: var(--white);
 }
 /* Add To Cart Page Ends Here */
+
+/* Shop Page Starts Here */
+ul.collapse-list li:last-child {
+  border-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.per-page-filter select {
+  width: 10rem;
+  border-radius: 0.5rem;
+  border-color: var(--text-color);
+  padding: 0.3rem 1rem;
+}
+/* Shop Page Ends Here */

@@ -101,7 +101,28 @@
   margin-bottom: 1.5rem;
 }
 
-/* Border Radius */
+/* Border */
+
+.border-brand-1 {
+  border: 1px solid var(--brand-color) !important;
+}
+
+.border-brand-2 {
+  border: 2px solid var(--brand-color) !important;
+}
+
+.border-brand-3 {
+  border: 3px solid var(--brand-color) !important;
+}
+
+.border-bottom-brand-1 {
+  border-bottom: 1px solid var(--brand-color) !important;
+}
+
+.border-bottom-brand-2 {
+  border-bottom: 2px solid var(--brand-color) !important;
+}
+
 .rounded-4 {
   border-radius: 0.75rem !important;
 }
@@ -175,6 +196,121 @@
   width: 12rem;
   color: var(--text-color);
   accent-color: red;
+}
+
+/* Custom Radio Button */
+.radio-btn input[type="radio"] {
+  display: none;
+}
+
+.radio-btn label {
+  position: relative;
+  border: 1px solid var(--stroke-color);
+  width: 50%;
+  padding: 7px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio-btn input[type="radio"]:checked + label {
+  color: #ffffff;
+  background-color: var(--brand-color);
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+.range-selector-wrapper {
+  position: relative;
+  padding: 5rem 0;
+  display: flex;
+  margin-bottom: -4rem;
+}
+
+.range-slider {
+  position: relative;
+  appearance: none;
+  width: 100%;
+  height: 0.2rem;
+  outline: none;
+  background-color: var(--brand-color);
+}
+
+.range-slider::after {
+  position: absolute;
+  width: var(--rangeSliderWidth, 50%);
+  height: 0.5rem;
+  background: var(--brand-color);
+  top: 50%;
+  left: 0;
+  content: "";
+  transform: translateY(-50%);
+  border-radius: 0.5rem;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+  border-radius: 50%;
+}
+
+.range-selector {
+  height: 8.5rem;
+  width: 6.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.range-selector-btn {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--white);
+  border: 3px solid var(--brand-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.range-selected-value {
+  width: 6.5rem;
+  height: 3.5rem;
+  position: absolute;
+  top: 0;
+  border-radius: 2px 2px 7px 8px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background: var(--brand-color);
+  padding-bottom: 0.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 54% 90%, 50% 100%, 50% 100%, 46% 90%, 0 90%);
+  font-size: 1.5rem;
+}
+
+/* Pagination */
+li.page-item {
+  margin-right: 10px;
+}
+
+li.page-item a {
+  color: var(--brand-color);
+  border-color: var(--brand-color);
+  border-radius: 0.5rem !important;
+  font-size: 1.6rem !important;
 }
 
 /* =========== Swiper Slide CSS Start Here ========== */
