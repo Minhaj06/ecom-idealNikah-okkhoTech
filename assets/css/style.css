@@ -1,9 +1,3 @@
-@import url("custom-css/reset.css");
-@import url("custom-css/variables.css");
-@import url("custom-css/reusable.css");
-@import url("custom-css/header.css");
-@import url("custom-css/footer.css");
-
 /* Home Banner */
 .carousel-indicators [data-bs-target] {
   width: 1.5rem;
@@ -147,6 +141,51 @@ section.clients-review .carousel-indicators [data-bs-target] {
 /* Cilents Review Section Ends Here */
 
 /* Single Product Page Starts Here */
+
+/* product slider */
+.single-product-slider {
+  border: 1px solid rgb(0, 191, 255, 30%);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.single-product-slider .swiper-slide img {
+  width: 35rem;
+  max-width: 35rem;
+}
+
+.single-product-slider .swiper-wrpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-product-slider .mySwiper {
+  margin-bottom: -12rem;
+  padding-top: 8rem;
+}
+
+.single-product-slider .mySwiper .swiper-slide {
+  border: 1px solid rgb(0, 191, 255, 30%);
+  height: 15rem;
+  max-height: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: var(--white);
+  opacity: 1;
+}
+
+.single-product-slider .mySwiper .swiper-slide-thumb-active {
+  border-color: var(--brand-color);
+}
+
+.single-product-slider .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* product slider end */
+
 .single-product-cat:hover {
   opacity: 75%;
 }
@@ -169,4 +208,38 @@ section.clients-review .carousel-indicators [data-bs-target] {
   background: var(--brand-color);
   color: var(--white);
 }
+
+::marker {
+  color: var(--brand-color);
+  font-size: 2.5rem;
+}
 /* Single Product Page Ends Here */
+
+/* Add To Cart Page Starts Here */
+.edit-icon-pen {
+  color: var(--white);
+  font-size: 1.5rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.card-item-single .img-thumbnail {
+  width: 9rem;
+  height: 9rem;
+}
+
+.card-item-single:last-child {
+  border-bottom: 0 !important;
+}
+
+.add-to-cart-bottom-banner {
+  background-image: url("../../images/add-to-cart-bottom-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  color: var(--white);
+}
+/* Add To Cart Page Ends Here */

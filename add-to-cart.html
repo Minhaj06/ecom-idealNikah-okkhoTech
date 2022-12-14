@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Add To Cart - IdealNikah</title>
+</head>
+
+<body>
+    <!-- Header Starts Here -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- topbar -->
+            <div class="topbar d-lg-flex justify-content-between align-items-center border-bottom py-3">
+                <!-- logo -->
+                <a href="">
+                    <img src="images/logo.svg" alt="" class="logo" />
+                </a>
+
+                <!-- search box -->
+                <div class="search-box position-relative fs-3">
+                    <input class="px-4 py-3 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+                    <button class="btn fs-3 position-absolute top-0 end-0 h-100 pt-3 pe-3 text-color">
+                        <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+                    </button>
+                </div>
+
+                <!-- icons -->
+                <div class="topbar-icons text-capitalize d-flex justify-content-end align-items-center gap-5">
+                    <div class="topbar-icon-group">
+                        <a class="text-black" href="">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="floating-num">5</span>
+                            </div>
+                            <span class="icon-name">wishlist</span>
+                        </a>
+                    </div>
+                    <div class="topbar-icon-group">
+                        <a class="text-black" href="">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="floating-num">5</span>
+                            </div>
+                            <span class="icon-name">cart</span>
+                        </a>
+                    </div>
+                    <a href="" class="btn button fs-2"> login <i class="fa-regular fa-user"></i> </a>
+                </div>
+            </div>
+
+            <!-- menubar -->
+            <div class="row align-items-center menubar border-bottom py-3">
+                <div class="col-lg-3">
+                    <a href="" class="btn button p-3">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        browse all catagories
+                    </a>
+                </div>
+
+                <div class="col-lg-9">
+                    <ul class="menu text-capitalize">
+                        <li class="d-inline-block me-5">
+                            <a href="">home</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">about</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">shop</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">vendors</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">mega menu</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Main Contents Start Here -->
+    <main class="main" id="main">
+        <!-- Cart Area Starts Here -->
+        <section class="container text-capitalize">
+
+            <div class="row mb-5">
+                <div class="col-lg-8 d-flex justify-content-between align-items-center">
+                    <h1 class="">You added 5 items in your cart</h1>
+                    <button class="btn bg-transparent brand-color fs-3 text-capitalize font-weight-600">
+                        <i class="fa-regular fa-trash-can"></i>
+                        clear cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="add-to-carts-area row g-4 mb-5">
+                <div class="col-lg-8">
+                    <div class="add-to-cart-left">
+                        <div class="card rounded-4 mb-5">
+                            <div
+                                class="card-header rounded-0 border-0 rounded-top-4 fs-2 bg-brand p-4 d-flex justify-content-between align-items-center">
+                                <h3>Location</h3>
+
+                                <button class="btn edit-icon-pen overflow-hidden" style="width: 0; visibility:hidden">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-body p-4 px-0">
+                                <div
+                                    class="card-item-single d-flex justify-content-between align-items-center py-4 border-bottom px-4">
+                                    <div class="left d-flex align-items-center gap-2 gap-lg-4">
+                                        <input type="checkbox" name="" id="">
+
+                                        <img class="img-thumbnail rounded-3" src="images/popular-product-2.png" alt="">
+
+                                        <div class="card-item-info">
+                                            <h3 class="mb-4">this bag is full custom leather.</h3>
+
+                                            <div class="d-flex gap-3 mb-2">
+                                                <div class="stars fs-4">
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2 not-given"></i>
+                                                    <span class="text-color">(4.0)</span>
+                                                </div>
+                                                |
+
+                                                <h4 class="card-item-price">
+                                                    <span class="text-color-dark">price:</span>
+                                                    ৳1300.00
+                                                </h4>
+                                            </div>
+
+                                            <button class="btn bg-transparent brand-color fs-3 text-capitalize p-0">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                                clear cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <input class="form-control card-item-count" type="number" name="" id=""
+                                            value="01">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="card-item-single d-flex justify-content-between align-items-center py-4 border-bottom px-4">
+                                    <div class="left d-flex align-items-center gap-2 gap-lg-4">
+                                        <input type="checkbox" name="" id="">
+
+                                        <img class="img-thumbnail rounded-3" src="images/popular-product-4.png" alt="">
+
+                                        <div class="card-item-info">
+                                            <h3 class="mb-4">this bag is full custom leather.</h3>
+
+                                            <div class="d-flex gap-3 mb-2">
+                                                <div class="stars fs-4">
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2 not-given"></i>
+                                                    <span class="text-color">(4.0)</span>
+                                                </div>
+                                                |
+
+                                                <h4 class="card-item-price">
+                                                    <span class="text-color-dark">price:</span>
+                                                    ৳1300.00
+                                                </h4>
+                                            </div>
+
+                                            <button class="btn bg-transparent brand-color fs-3 text-capitalize p-0">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                                clear cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <input class="form-control card-item-count" type="number" name="" id=""
+                                            value="01">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="card-item-single d-flex justify-content-between align-items-center py-4 border-bottom px-4">
+                                    <div class="left d-flex align-items-center gap-2 gap-lg-4">
+                                        <input type="checkbox" name="" id="">
+
+                                        <img class="img-thumbnail rounded-3" src="images/trending-product-1.png" alt="">
+
+                                        <div class="card-item-info">
+                                            <h3 class="mb-4">this bag is full custom leather.</h3>
+
+                                            <div class="d-flex gap-3 mb-2">
+                                                <div class="stars fs-4">
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2 not-given"></i>
+                                                    <span class="text-color">(4.0)</span>
+                                                </div>
+                                                |
+
+                                                <h4 class="card-item-price">
+                                                    <span class="text-color-dark">price:</span>
+                                                    ৳1300.00
+                                                </h4>
+                                            </div>
+
+                                            <button class="btn bg-transparent brand-color fs-3 text-capitalize p-0">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                                clear cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <input class="form-control card-item-count" type="number" name="" id=""
+                                            value="01">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="card-item-single d-flex justify-content-between align-items-center py-4 border-bottom px-4">
+                                    <div class="left d-flex align-items-center gap-2 gap-lg-4">
+                                        <input type="checkbox" name="" id="">
+
+                                        <img class="img-thumbnail rounded-3" src="images/trending-product-3.png" alt="">
+
+                                        <div class="card-item-info">
+                                            <h3 class="mb-4">this bag is full custom leather.</h3>
+
+                                            <div class="d-flex gap-3 mb-2">
+                                                <div class="stars fs-4">
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2 not-given"></i>
+                                                    <span class="text-color">(4.0)</span>
+                                                </div>
+                                                |
+
+                                                <h4 class="card-item-price">
+                                                    <span class="text-color-dark">price:</span>
+                                                    ৳1300.00
+                                                </h4>
+                                            </div>
+
+                                            <button class="btn bg-transparent brand-color fs-3 text-capitalize p-0">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                                clear cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <input class="form-control card-item-count" type="number" name="" id=""
+                                            value="01">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="card-item-single d-flex justify-content-between align-items-center py-4 border-bottom px-4">
+                                    <div class="left d-flex align-items-center gap-2 gap-lg-4">
+                                        <input type="checkbox" name="" id="">
+
+                                        <img class="img-thumbnail rounded-3" src="images/trending-product-8.png" alt="">
+
+                                        <div class="card-item-info">
+                                            <h3 class="mb-4">this bag is full custom leather.</h3>
+
+                                            <div class="d-flex gap-3 mb-2">
+                                                <div class="stars fs-4">
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2"></i>
+                                                    <i class="fa-solid fa-star me-2 not-given"></i>
+                                                    <span class="text-color">(4.0)</span>
+                                                </div>
+                                                |
+
+                                                <h4 class="card-item-price">
+                                                    <span class="text-color-dark">price:</span>
+                                                    ৳1300.00
+                                                </h4>
+                                            </div>
+
+                                            <button class="btn bg-transparent brand-color fs-3 text-capitalize p-0">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                                clear cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <input class="form-control card-item-count" type="number" name="" id=""
+                                            value="01">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="fs-3">do you want to continue shoping? <a href="" class="brand-color">shop now</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="add-to-cart-right">
+                        <div class="card rounded-4 mb-5">
+                            <div
+                                class="card-header rounded-0 border-0 rounded-top-4 fs-2 bg-brand p-4 d-flex justify-content-between align-items-center">
+                                <h3>Location</h3>
+
+                                <button class="btn edit-icon-pen">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <div class="icon-text d-flex gap-4 mb-4">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <div class="text">
+                                        Sheikh Maliha mouly
+                                    </div>
+                                </div>
+
+                                <div class="icon-text d-flex gap-4 mb-4">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="text">
+                                        Shreerumpur, 9400 grugram, satkhra sadar,
+                                        satkhira, bangladesh.
+                                    </div>
+                                </div>
+
+                                <div class="icon-text d-flex gap-4 mb-4">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <div class="text">+88801759-585858
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card rounded-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center py-4 border-bottom">
+                                    <h2>sub total</h2>
+                                    <h2>5300.00</h2>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center py-4 border-bottom">
+                                    <h2>Shipping fee</h2>
+                                    <h2>15.00</h2>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center py-4 pb-5 border-bottom">
+                                    <h2>vat 5%</h2>
+                                    <h2>250.00</h2>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center py-4 mb-5">
+                                    <h2 class="font-weight-600 text-color-dark">Total</h2>
+                                    <h2 class="font-weight-600 text-color-dark">5700.00</h2>
+                                </div>
+
+                                <button class="payment btn button w-100 py-3 fs-3">proceed for payment</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cart Area Ends Here -->
+
+
+        <!-- Bottom Banner Starts Here -->
+        <section class="add-to-cart-bottom-banner container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="lh-base text-capitalize fs-1 mb-5">
+                        your marrige is important for us, so shoping with us. a trustable online shop
+                    </h2>
+
+                    <p class="lh-base text-capitalize mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                        ullamcorper
+                        praesent
+                        molestie.
+                    </p>
+
+                    <form action="">
+                        <div class="d-flex gap-4">
+                            <div
+                                class="d-inline-block d-flex align-items-center gap-3 text-color bg-white border-0 px-4 rounded-3">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <input class="subscribe-email-input border-0" type="email" name="" id=""
+                                    placeholder="Your email address..." required>
+                            </div>
+                            <input type="submit" value="Submit Now" class="btn button rounded-2">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Bottom Banner Ends Here -->
+
+    </main>
+    <!-- Main Contents End Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="footer bg-brand py-5">
+        <div class="container text-capitalize">
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                    <ul class="fs-3">
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">about us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">How to Buy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">idealNikah Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                    <ul class="fs-3">
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Wish List</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Order History</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Order Tracking</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                    <ul class="fs-3">
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Shipping Policy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Payment Policy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Returns & Refunds</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Terms & Conditions </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">join with us</h3>
+
+                    <div class="d-flex align-items-center gap-5 py-5">
+                        <h3 class="fs-2 font-weight-normal">Contact By</h3>
+                        <div>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="">
+                        <img class="footer-logo" src="images/footer-logo.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 fs-2 text-center">Copyright © 2022 idealnikah.com</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>></script>
+</body>
+
+</html>

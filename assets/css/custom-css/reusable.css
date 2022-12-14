@@ -103,10 +103,27 @@
 
 /* Border Radius */
 .rounded-4 {
-  border-radius: 0.75rem;
+  border-radius: 0.75rem !important;
 }
+.rounded-top-4 {
+  border-top-left-radius: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
+}
+.rounded-bottom-4 {
+  border-bottom-left-radius: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem !important;
+}
+
 .rounded-5 {
-  border-radius: 1rem;
+  border-radius: 1rem !important;
+}
+.rounded-top-5 {
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+}
+.rounded-bottom-5 {
+  border-bottom-left-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
 }
 
 /* Star Rating */
@@ -127,6 +144,7 @@
 }
 .product-card:hover {
   border-color: var(--brand-color);
+  transform: scale(1.03);
 }
 
 /* Offer Hightlight */
@@ -147,3 +165,82 @@
   padding: 0.7rem 5rem;
   border-radius: 1rem;
 }
+
+/* Card Item Count */
+.card-item-count {
+  font-size: 2rem;
+  border-color: var(--brand-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  width: 12rem;
+  color: var(--text-color);
+  accent-color: red;
+}
+
+/* =========== Swiper Slide CSS Start Here ========== */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========== Swiper Slide CSS End Here ========== */
