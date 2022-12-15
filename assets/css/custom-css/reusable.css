@@ -21,7 +21,10 @@
   background-color: var(--brand-color) !important;
 }
 .bg-brand-light {
-  background-color: var(--brand-color-light);
+  background-color: var(--brand-color-light) !important;
+}
+.bg-text-color-dark {
+  background-color: var(--text-color-dark) !important;
 }
 /* .bg-white {
   color: var(--brand-color) !important;
@@ -115,12 +118,26 @@
   border: 3px solid var(--brand-color) !important;
 }
 
+.border-top-brand-1 {
+  border-top: 1px solid var(--brand-color) !important;
+}
+
+.border-top-brand-2 {
+  border-top: 2px solid var(--brand-color) !important;
+}
+.border-top-brand-3 {
+  border-top: 3px solid var(--brand-color) !important;
+}
+
 .border-bottom-brand-1 {
   border-bottom: 1px solid var(--brand-color) !important;
 }
 
 .border-bottom-brand-2 {
   border-bottom: 2px solid var(--brand-color) !important;
+}
+.border-bottom-brand-3 {
+  border-bottom: 3px solid var(--brand-color) !important;
 }
 
 .rounded-4 {
@@ -311,6 +328,12 @@ li.page-item a {
   border-color: var(--brand-color);
   border-radius: 0.5rem !important;
   font-size: 1.6rem !important;
+}
+
+/* Accordion Active */
+.accordion-button:not(.collapsed) {
+  color: var(--brand-color);
+  background-color: var(--brand-color-light);
 }
 
 /* =========== Swiper Slide CSS Start Here ========== */

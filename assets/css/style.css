@@ -257,3 +257,24 @@ ul.collapse-list li:last-child {
   padding: 0.3rem 1rem;
 }
 /* Shop Page Ends Here */
+
+/* Signup & Signin Page Start Here  */
+.login-form input {
+  border: none !important;
+}
+.login-form input:focus {
+  outline: 0px !important;
+  appearance: none;
+  box-shadow: none !important;
+  border: none;
+}
+/* Signup & Signin Page End Here  */
+
+/* Account Order Page Starts Here */
+.side-nav .user-info .user-profile-pic {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+}
+/* Account Order Page Ends Here */
