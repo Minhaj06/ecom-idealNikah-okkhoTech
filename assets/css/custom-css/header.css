@@ -41,3 +41,56 @@
 .header .menu l a:hover {
   color: var(--brand-color);
 }
+
+/* Sub Menu */
+.dropdown-button {
+  position: relative;
+}
+
+.sub-menu {
+  position: absolute;
+  z-index: 1030;
+  background-color: var(--white);
+  min-width: 21rem;
+  border-top: 3px solid var(--brand-color);
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-top: 2px;
+  padding: 1rem 0;
+  display: none;
+}
+
+.dropdown-button:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu .nav-link {
+  color: var(--text-color-dark);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.sub-menu .nav-link:hover {
+  background-color: var(--brand-color);
+  color: var(--white);
+}
+
+.level-two-dropdown-button {
+  position: relative;
+}
+
+.level-two-sub-menu {
+  position: absolute;
+  top: 0;
+  min-width: 20rem;
+  left: 21rem;
+  background-color: var(--white);
+  padding: 1.5rem 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  display: none;
+}
+
+.level-two-dropdown-button:hover .level-two-sub-menu {
+  display: block;
+}
