@@ -64,6 +64,7 @@
   background-color: var(--white);
   color: var(--brand-color);
   opacity: 85%;
+  border-color: var(--brand-color);
 }
 
 .button-outline {
@@ -179,10 +180,12 @@
 .product-card {
   border: 1px solid #9a999942;
   border-radius: 0.8rem;
+  transition: all 0.2s linear;
 }
 .product-card:hover {
   border-color: var(--brand-color);
   transform: scale(1.03);
+  z-index: 1;
 }
 
 /* Offer Hightlight */

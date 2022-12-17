@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Add To Cart - IdealNikah</title>
+</head>
+
+<body>
+    <!-- Header Starts Here -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- topbar -->
+            <div class="topbar d-lg-flex justify-content-between align-items-center border-bottom py-3">
+                <!-- logo -->
+                <a href="">
+                    <img src="images/logo.svg" alt="" class="logo" />
+                </a>
+
+                <!-- search box -->
+                <div class="search-box position-relative fs-3">
+                    <input class="px-4 py-3 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+                    <button class="btn fs-3 position-absolute top-0 end-0 h-100 pt-3 pe-3 text-color">
+                        <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+                    </button>
+                </div>
+
+                <!-- icons -->
+                <div class="topbar-icons text-capitalize d-flex justify-content-end align-items-center gap-5">
+                    <div class="topbar-icon-group">
+                        <a class="text-black" href="">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="floating-num">5</span>
+                            </div>
+                            <span class="icon-name">wishlist</span>
+                        </a>
+                    </div>
+                    <div class="topbar-icon-group">
+                        <a class="text-black" href="">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="floating-num">5</span>
+                            </div>
+                            <span class="icon-name">cart</span>
+                        </a>
+                    </div>
+                    <a href="" class="btn button fs-2"> login <i class="fa-regular fa-user"></i> </a>
+                </div>
+            </div>
+
+            <!-- menubar -->
+            <div class="row align-items-center menubar border-bottom py-3">
+                <div class="col-lg-3">
+                    <a href="" class="btn button p-3">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        browse all catagories
+                    </a>
+                </div>
+
+                <div class="col-lg-9">
+                    <ul class="menu text-capitalize">
+                        <li class="d-inline-block me-5">
+                            <a href="">home</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">about</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">shop</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">vendors</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">mega menu</a>
+                        </li>
+                        <li class="d-inline-block me-5">
+                            <a href="">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Main Contents Start Here -->
+    <main class="main" id="main">
+
+        <!-- Account Oreder Details Start Here -->
+        <section class="container text-capitalize">
+            <div class="row g-5">
+
+                <!-- Side Nav -->
+                <div class="col-lg-4 col-xl-3">
+                    <div class="side-nav p-4">
+
+                        <div class="nav-header border-bottom pb-3 user-info d-flex gap-3 mb-4">
+                            <img class="user-profile-pic" src="images/most-valuable-product-1.png" alt="">
+
+                            <div>
+                                <h4 class="name">Ali Tufan</h4>
+                                <h5 class="email text-lowercase">alitfn58@gmail.com</h5>
+                            </div>
+                        </div>
+
+                        <div class="side-menu">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="account-details.html" class="nav-link">
+                                        <i class="fa-solid fa-user-check"></i>
+                                        account details
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-order.html" class="nav-link">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        order
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-address.html" class="nav-link">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        address
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-wishlist.html" class="nav-link">
+                                        <i class="fa-solid fa-shield-heart"></i>
+                                        wishlist
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-invoice.html" class="nav-link">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                        invoices
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Order Details -->
+                <div class="col-lg-8 col-xl-9">
+                    <div class="order-details p-4">
+                        <h1 class="text-color-dark mb-5">Order</h1>
+
+                        <table class="table fs-4">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Payment</th>
+                                    <th>Status</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>#1923</td>
+                                    <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                    <td>Aug 15, 2020</td>
+                                    <td>paid</td>
+                                    <td><span class="delivered status">delivered</span></td>
+                                    <td>$56.00</td>
+                                    <td><span class="bg-brand-light p-2 rounded-3">...</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1923</td>
+                                    <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                    <td>Aug 15, 2020</td>
+                                    <td>paid</td>
+                                    <td><span class="cancel status">cancel</span></td>
+                                    <td>$56.00</td>
+                                    <td><span class="bg-brand-light p-2 rounded-3">...</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1923</td>
+                                    <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                    <td>Aug 15, 2020</td>
+                                    <td>paid</td>
+                                    <td><span class="in-progress status">in progress</span></td>
+                                    <td>$56.00</td>
+                                    <td><span class="bg-brand-light p-2 rounded-3">...</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1923</td>
+                                    <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                    <td>Aug 15, 2020</td>
+                                    <td>paid</td>
+                                    <td><span class="delivered status">delivered</span></td>
+                                    <td>$56.00</td>
+                                    <td><span class="bg-brand-light p-2 rounded-3">...</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1923</td>
+                                    <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                    <td>Aug 15, 2020</td>
+                                    <td>paid</td>
+                                    <td><span class="cancel status">cancel</span></td>
+                                    <td>$56.00</td>
+                                    <td><span class="bg-brand-light p-2 rounded-3">...</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1923</td>
+                                    <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                    <td>Aug 15, 2020</td>
+                                    <td>paid</td>
+                                    <td><span class="in-progress status">in progress</span></td>
+                                    <td>$56.00</td>
+                                    <td><span class="bg-brand-light p-2 rounded-3">...</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Account Oreder Details End Here -->
+
+    </main>
+    <!-- Main Contents End Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="footer bg-brand py-5">
+        <div class="container text-capitalize">
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                    <ul class="fs-3">
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">about us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">How to Buy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">idealNikah Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                    <ul class="fs-3">
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Wish List</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Order History</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Order Tracking</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                    <ul class="fs-3">
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Shipping Policy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Payment Policy</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Returns & Refunds</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="" class="nav-link">Terms & Conditions </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">join with us</h3>
+
+                    <div class="d-flex align-items-center gap-5 py-5">
+                        <h3 class="fs-2 font-weight-normal">Contact By</h3>
+                        <div>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="">
+                        <img class="footer-logo" src="images/footer-logo.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 fs-2 text-center">Copyright © 2022 idealnikah.com</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    </script>
+</body>
+
+</html>

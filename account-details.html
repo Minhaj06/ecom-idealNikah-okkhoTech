@@ -100,28 +100,156 @@
     <main class="main" id="main">
 
         <!-- Account Oreder Details Start Here -->
-        <section class="container">
-            <div class="row g-5">
+        <section class="container text-capitalize">
+            <div class="row g-4 g-xxl-5">
 
                 <!-- Side Nav -->
-                <div class="col-lg-4 col-xl-3">
+                <div class="col-lg-4 col-xl-3 col-xxl-2">
                     <div class="side-nav p-4">
-                        <div class="nav-header border-bottom pb-3">
-                            <div class="user-info d-flex gap-3">
-                                <img class="user-profile-pic" src="images/most-valuable-product-1.png" alt="">
 
-                                <div>
-                                    <h3 class="name mb-1">Ali Tufan</h3>
-                                    <h4 class="email">alitfn58@gmail.com</h4>
-                                </div>
+                        <div class="nav-header border-bottom pb-3 user-info d-flex gap-3 mb-4">
+                            <img class="user-profile-pic" src="images/most-valuable-product-1.png" alt="">
+
+                            <div>
+                                <h4 class="name">Ali Tufan</h4>
+                                <h5 class="email text-lowercase">alitfn58@gmail.com</h5>
                             </div>
                         </div>
+
+                        <div class="side-menu">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="account-details.html" class="nav-link">
+                                        <i class="fa-solid fa-user-check"></i>
+                                        account details
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-order.html" class="nav-link">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        order
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-address.html" class="nav-link">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        address
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-wishlist.html" class="nav-link">
+                                        <i class="fa-solid fa-shield-heart"></i>
+                                        wishlist
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="account-invoice.html" class="nav-link">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                        invoices
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Order Details -->
-                <div class="col-lg-8 col-xl-9">
-                    <div class="details p-4">
+                <!-- Account Details -->
+                <div class="col-lg-8 col-xl-9 col-xxl-10">
+                    <div class="account-details p-4">
+                        <h1 class="text-color-dark mb-5">Account Details</h1>
+
+                        <!-- Nav Pills -->
+                        <ul class="nav nav-pills mb-5" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#update-profile-info-tab"
+                                    aria-selected="true" role="tab">Profile İnformation</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#update-password-tab"
+                                    aria-selected="false" role="tab" tabindex="-1">Password</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Panes -->
+                        <div class="tab-content mt-2">
+                            <div id="update-profile-info-tab" class="tab-pane active show" role="tabpanel">
+
+                                <form action="">
+                                    <div class="row g-5 mb-5">
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="first_name">First
+                                                Name</label>
+                                            <input type="text" class="form-control fs-4 px-4 p-4" id="first_name"
+                                                name="first_name" placeholder="First Name">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="last_name">Last
+                                                Name</label>
+                                            <input type="text" class="form-control fs-4 px-4 p-4" id="last_name"
+                                                name="last_name" placeholder="Last Name">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="email">Email
+                                                Address</label>
+                                            <input type="email" class="form-control fs-4 px-4 p-4" id="email"
+                                                name="email" placeholder="Email Address">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500"
+                                                for="phone">Phone</label>
+                                            <input type="text" class="form-control fs-4 px-4 p-4" id="phone"
+                                                name="phone" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn button px-5 py-3 fs-3 me-3">Update</button>
+                                    <button type="button" class="btn button-bg-white px-5 py-3 fs-3">Cancel</button>
+                                </form>
+
+                            </div>
+
+                            <div id="update-password-tab" class="tab-pane fade" role="tabpanel">
+                                <form action="">
+                                    <div class="row g-5 mb-5">
+                                        <div class="col-sm-12">
+                                            <label class="mb-3 text-color-dark font-weight-500"
+                                                for="current_password">Current
+                                                Password</label>
+                                            <input type="password" class="form-control fs-4 px-4 p-4"
+                                                id="current_password" name="current_password"
+                                                placeholder="Current Password">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="new_password">New
+                                                Password</label>
+                                            <input type="password" class="form-control fs-4 px-4 p-4" id="new_password"
+                                                name="new_password" placeholder="New Password">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label class="mb-3 text-color-dark font-weight-500"
+                                                for="c_new_password">Confirm New Password</label>
+                                            <input type="password" class="form-control fs-4 px-4 p-4"
+                                                id="c_new_password" name="c_new_password"
+                                                placeholder="Confirm Current Password">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn button px-5 py-3 fs-3 me-3">Update</button>
+                                    <button type="button" class="btn button-bg-white px-5 py-3 fs-3">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
@@ -230,7 +358,8 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>></script>
+    <script src="assets/js/script.js"></script>
+    </script>
 </body>
 
 </html>
