@@ -18,75 +18,279 @@
 </head>
 
 <body>
+
+    <!-- Mobile Menu Starts Here -->
+    <nav class="mobile-menu d-lg-none" style="z-index: 1020">
+        <div class="container">
+            <ul class="menu text-capitalize">
+                <li class="nav-item mb-4">
+                    <a class="" href="">home</a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class="" href="">about</a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class="" href="">shop</a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class="" href="">vendors</a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class=" mobile-dropdown" href="javascript: void(0)">
+                        browse all categories
+                        <i class="fa-solid fa-chevron-right fs-5 ms-3"></i>
+                    </a>
+
+                    <ul class="mobile-submenu hide">
+                        <li class="nav-item mb-4">
+                            <a class="" href="">Laptop</a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a class="" href="">Laptop</a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a class="" href="">Laptop</a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a class=" level-two-mobile-dropdown" href="javascript: void(0)">
+                                Laptop
+                                <i class="fa-solid fa-chevron-right fs-5 ms-3"></i>
+                            </a>
+
+                            <ul class="level-two-mobile-submenu hide">
+                                <li class="nav-item mb-4">
+                                    <a class="" href="">Laptop</a>
+                                </li>
+                                <li class="nav-item mb-4">
+                                    <a class="" href="">Laptop</a>
+                                </li>
+                                <li class="nav-item mb-4">
+                                    <a class="" href="">Laptop</a>
+                                </li>
+                                <li class="nav-item mb-4">
+                                    <a class="" href="">Laptop</a>
+                                </li>
+                                <li class="nav-item mb-4">
+                                    <a class="" href="">Laptop</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a class="" href="">Laptop</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class="" href="">contact us</a>
+                </li>
+            </ul>
+
+
+
+
+            <div class="search-box position-relative fs-3 overflow-hidden">
+                <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+                <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
+                    <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends Here -->
+
     <!-- Header Starts Here -->
     <header class="header" id="header">
         <div class="container">
+
             <!-- topbar -->
-            <div class="topbar d-lg-flex justify-content-between align-items-center border-bottom py-3">
+            <div class="topbar row gx-0 gy-3 justify-content-between align-items-center border-bottom py-3 w-100">
                 <!-- logo -->
-                <a href="">
+                <a class="col-3 col-lg-3 col-xl-4" href="">
                     <img src="images/logo.svg" alt="" class="logo" />
                 </a>
 
                 <!-- search box -->
-                <div class="search-box position-relative fs-3">
-                    <input class="px-4 py-3 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
-                    <button class="btn fs-3 position-absolute top-0 end-0 h-100 pt-3 pe-3 text-color">
+                <div class="d-none d-lg-block col-lg-4 col-xl-4 search-box position-relative fs-3 overflow-hidden">
+                    <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+                    <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
                         <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
                     </button>
                 </div>
 
                 <!-- icons -->
-                <div class="topbar-icons text-capitalize d-flex justify-content-end align-items-center gap-5">
+                <div
+                    class="col-8 col-lg-5 col-xl-4 topbar-icons text-capitalize d-flex justify-content-center justify-content-lg-end align-items-center gap-5 g-0">
                     <div class="topbar-icon-group">
-                        <a class="text-black" href="">
+                        <a class="text-color-dark" href="wishlist.html">
                             <div class="floating-text-icon d-inline-block position-relative">
                                 <i class="fa-regular fa-heart"></i>
                                 <span class="floating-num">5</span>
                             </div>
-                            <span class="icon-name">wishlist</span>
+                            <span class="icon-name d-none d-sm-block">wishlist</span>
                         </a>
                     </div>
                     <div class="topbar-icon-group">
-                        <a class="text-black" href="">
+                        <a class="text-color-dark" href="cart.html">
                             <div class="floating-text-icon d-inline-block position-relative">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span class="floating-num">5</span>
                             </div>
-                            <span class="icon-name">cart</span>
+                            <span class="icon-name d-none d-sm-block">cart</span>
                         </a>
                     </div>
-                    <a href="" class="btn button fs-2"> login <i class="fa-regular fa-user"></i> </a>
+                    <a href="" class="btn button fs-2">
+                        <span class="d-none d-sm-inline">login</span>
+                        <i class="fa-regular fa-user"></i>
+                    </a>
                 </div>
+
+                <div class="col-1 d-lg-none text-end text-color-dark">
+                    <span class="menu-icon" role="button" style="font-size: 3.5rem">
+                        <i class="fa-solid fa-bars d-block"></i>
+                    </span>
+                </div>
+
             </div>
 
             <!-- menubar -->
-            <div class="row align-items-center menubar border-bottom py-3">
-                <div class="col-lg-3">
+            <div class="d-none d-lg-flex row align-items-center menubar border-bottom py-3">
+                <div class="col-md-3 dropdown-button">
                     <a href="" class="btn button p-3">
                         <i class="fa-solid fa-table-cells-large"></i>
                         browse all catagories
                     </a>
+
+                    <ul class="sub-menu shadow-lg">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Desktop</a>
+                        </li>
+
+
+                        <li class="nav-item level-two-dropdown-button">
+                            <a href="" class="nav-link">
+                                Laptop <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+
+                            <ul class="level-two-sub-menu shadow-lg">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">HP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Dell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Asus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Lenovo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">MSI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Gigabyte</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item level-two-dropdown-button">
+                            <a href="" class="nav-link">
+                                Mobile <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+
+                            <ul class="level-two-sub-menu shadow-lg">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">HP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Dell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Asus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Lenovo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">MSI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Gigabyte</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Component</a>
+                        </li>
+
+                        <li class="nav-item level-two-dropdown-button">
+                            <a href="" class="nav-link">
+                                Monitor <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+
+                            <ul class="level-two-sub-menu shadow-lg">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">HP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Dell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Asus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Lenovo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">MSI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Gigabyte</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">UPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Tablet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Office equipment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Camera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Security</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Networking</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="col-lg-9">
+                <div class="col-md-9">
                     <ul class="menu text-capitalize">
-                        <li class="d-inline-block me-5">
+                        <li class="d-inline-block me-4 me-lg-5">
                             <a href="">home</a>
                         </li>
-                        <li class="d-inline-block me-5">
+                        <li class="d-inline-block me-4 me-lg-5">
                             <a href="">about</a>
                         </li>
-                        <li class="d-inline-block me-5">
+                        <li class="d-inline-block me-4 me-lg-5">
                             <a href="">shop</a>
                         </li>
-                        <li class="d-inline-block me-5">
+                        <li class="d-inline-block me-4 me-lg-5">
                             <a href="">vendors</a>
                         </li>
-                        <li class="d-inline-block me-5">
+                        <li class="d-inline-block me-4 me-lg-5">
                             <a href="">mega menu</a>
                         </li>
-                        <li class="d-inline-block me-5">
+                        <li class="d-inline-block me-4 me-lg-5">
                             <a href="">contact us</a>
                         </li>
                     </ul>
@@ -101,7 +305,7 @@
 
         <!-- Account Oreder Details Start Here -->
         <section class="container text-capitalize">
-            <div class="row g-4 g-xxl-5">
+            <div class="row">
 
                 <!-- Side Nav -->
                 <div class="col-lg-4 col-xl-3 col-xxl-2">
@@ -119,31 +323,31 @@
                         <div class="side-menu">
                             <ul>
                                 <li class="nav-item">
-                                    <a href="account-details.html" class="nav-link">
+                                    <a href="details.html" class="nav-link">
                                         <i class="fa-solid fa-user-check"></i>
                                         account details
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="account-order.html" class="nav-link">
+                                    <a href="order.html" class="nav-link">
                                         <i class="fa-solid fa-check-to-slot"></i>
                                         order
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="account-address.html" class="nav-link">
+                                    <a href="address.html" class="nav-link">
                                         <i class="fa-solid fa-location-dot"></i>
                                         address
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="account-wishlist.html" class="nav-link">
+                                    <a href="wishlist.html" class="nav-link">
                                         <i class="fa-solid fa-shield-heart"></i>
                                         wishlist
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="account-invoice.html" class="nav-link">
+                                    <a href="invoice.html" class="nav-link">
                                         <i class="fa-solid fa-file-invoice-dollar"></i>
                                         invoices
                                     </a>
@@ -264,9 +468,9 @@
     <!-- Footer Starts Here -->
     <footer class="footer bg-brand py-5">
         <div class="container text-capitalize">
-            <div class="row mb-5">
-                <div class="col-lg-3">
-                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+            <div class="row mb-5 g-5 gx-4 gx-xl-5">
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
                     <ul class="fs-3">
                         <li class="nav-item mb-3">
                             <a href="" class="nav-link">about us</a>
@@ -283,8 +487,8 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3">
-                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
                     <ul class="fs-3">
                         <li class="nav-item mb-3">
                             <a href="" class="nav-link">Login</a>
@@ -301,8 +505,8 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3">
-                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
                     <ul class="fs-3">
                         <li class="nav-item mb-3">
                             <a href="" class="nav-link">Privacy Policy</a>
@@ -322,8 +526,8 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3">
-                    <h3 class="fs-1 font-weight-normal mb-5 pb-4">join with us</h3>
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">join with us</h3>
 
                     <div class="d-flex align-items-center gap-5 py-5">
                         <h3 class="fs-2 font-weight-normal">Contact By</h3>
@@ -358,8 +562,8 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
-    </script>
 </body>
 
 </html>

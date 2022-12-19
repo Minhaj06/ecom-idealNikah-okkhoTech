@@ -1,3 +1,9 @@
+@media (max-width: 1199.98px) {
+  .account-table {
+    font-size: 1.4rem !important;
+  }
+}
+
 @media (max-width: 991.98px) {
   header.header {
     position: absolute;
@@ -68,6 +74,9 @@
     font-size: 1.6rem;
     padding: 0.5rem 1rem;
     width: 8rem;
+  }
+  .product-card img {
+    max-height: 15rem !important;
   }
 }
 

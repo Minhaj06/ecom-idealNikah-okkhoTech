@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Signin - IdealNikah</title>
+    <title>Add To Cart - IdealNikah</title>
 </head>
 
 <body>
@@ -84,6 +84,9 @@
                     <a class="" href="">contact us</a>
                 </li>
             </ul>
+
+
+
 
             <div class="search-box position-relative fs-3 overflow-hidden">
                 <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
@@ -300,62 +303,142 @@
     <!-- Main Contents Start Here -->
     <main class="main" id="main">
 
-        <!-- Signup Form Area Starts Here -->
+        <!-- Account Oreder Details Start Here -->
         <section class="container text-capitalize">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-6 bg-brand-light p-5 rounded-5">
+            <div class="row">
 
-                    <div class="text-color-dark mb-5">
-                        <h3 class="mb-3">login here</h3>
-                        <p class="fs-5 lh-base font-weight-500">
-                            Your personal data will be used to support your experience throughout this website, to
-                            manage access to your account.
-                        </p>
-                    </div>
+                <!-- Side Nav -->
+                <div class="col-lg-4 col-xl-3">
+                    <div class="side-nav p-4">
 
-                    <form action="" class="login-form">
+                        <div class="nav-header border-bottom pb-3 user-info d-flex gap-3 mb-4">
+                            <img class="user-profile-pic" src="images/most-valuable-product-1.png" alt="">
 
-                        <div class="input-icon d-flex align-items-center bg-white px-5 py-2 mb-4 rounded-4">
-                            <span class="fs-2">
-                                <i class="fa-regular fa-envelope"></i>
-                            </span>
-                            <input class="form-control fs-4 p-3" type="email" placeholder="example@gmail.com">
-                        </div>
-
-                        <div
-                            class="input-icon d-flex align-items-center bg-white px-5 py-2 mb-4 rounded-4 position-relative">
-                            <span class="fs-2">
-                                <i class="fa-solid fa-key"></i>
-                            </span>
-                            <input id="password" class="form-control fs-4 p-3" type="password"
-                                placeholder="Type password..">
-                            <i class="fa-regular fa-eye position-absolute end-0 fs-3 me-5 pass-icon"
-                                onclick="showHidePass(password, passIcon)" role="button"></i>
-                        </div>
-
-                        <div class="d-flex justify-content-between mb-5 font-weight-500">
-                            <div class="form-check text-color-dark">
-                                <input class="form-check-input" type="checkbox" value="" id="remember_me" checked>
-                                <label class="form-check-label" for="remember_me">
-                                    remember me
-                                </label>
+                            <div>
+                                <h4 class="name">Ali Tufan</h4>
+                                <h5 class="email text-lowercase">alitfn58@gmail.com</h5>
                             </div>
-
-                            <a class="text-color-dark" href="">forget password</a>
                         </div>
 
+                        <div class="side-menu">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="details.html" class="nav-link">
+                                        <i class="fa-solid fa-user-check"></i>
+                                        account details
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="order.html" class="nav-link">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        order
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="address.html" class="nav-link">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        address
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="wishlist.html" class="nav-link">
+                                        <i class="fa-solid fa-shield-heart"></i>
+                                        wishlist
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="invoice.html" class="nav-link">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                        invoices
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <input class="btn button w-100 p-3 fs-2 font-weight-500 mb-5" type="submit" value="Signin">
-
-                        <p class="text-center">Dont have an account? <a class="text-color-dark font-weight-600"
-                                href="signup.html">Signup</a>
-                        </p>
-
-                    </form>
+                    </div>
                 </div>
+
+                <!-- Invoice Details -->
+                <div class="col-lg-8 col-xl-9">
+                    <div class="order-details p-4">
+                        <h1 class="text-color-dark mb-5">Invoice</h1>
+
+                        <div class="table-responsive">
+                            <table class="table account-table fs-4">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Product</th>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>#1923</td>
+                                        <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                        <td>Aug 15, 2020</td>
+                                        <td>$56.00</td>
+                                        <td><span class="delivered status">delivered</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1923</td>
+                                        <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                        <td>Aug 15, 2020</td>
+                                        <td>$56.00</td>
+                                        <td><span class="cancel status">cancel</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1923</td>
+                                        <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                        <td>Aug 15, 2020</td>
+                                        <td>$56.00</td>
+                                        <td><span class="in-progress status">in progress</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1923</td>
+                                        <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                        <td>Aug 15, 2020</td>
+                                        <td>$56.00</td>
+                                        <td><span class="delivered status">delivered</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1923</td>
+                                        <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                        <td>Aug 15, 2020</td>
+                                        <td>$56.00</td>
+                                        <td><span class="cancel status">cancel</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>#1923</td>
+                                        <td>Lenovo IdeaPad 3 15.6" Laptop - Sand</td>
+                                        <td>Aug 15, 2020</td>
+                                        <td>$56.00</td>
+                                        <td><span class="in-progress status">in progress</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </section>
-        <!-- Signup Form Area Ends Here -->
+        <!-- Account Oreder Details End Here -->
 
     </main>
     <!-- Main Contents End Here -->
