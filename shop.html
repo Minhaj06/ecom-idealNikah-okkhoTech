@@ -20,7 +20,7 @@
 <body>
 
   <!-- Mobile Menu Starts Here -->
-  <nav class="mobile-menu d-lg-none hide-menu" style="z-index: 1020">
+  <nav class="mobile-menu d-lg-none" style="z-index: 1020">
     <div class="container">
       <ul class="menu text-capitalize">
         <li class="nav-item mb-4">
@@ -142,7 +142,7 @@
           </a>
         </div>
 
-        <div class="col-1 d-lg-none text-end text-black">
+        <div class="col-1 d-lg-none text-end text-color-dark">
           <span class="menu-icon" role="button" style="font-size: 3.5rem">
             <i class="fa-solid fa-bars d-block"></i>
           </span>
@@ -431,15 +431,15 @@
             <!-- Rating Wise Product Filter -->
             <div class="cat-wise mb-5">
               <div class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
-                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSizeFilter" aria-expanded="true"
-                aria-controls="collapseSizeFilter">
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseReviewFilter" aria-expanded="true"
+                aria-controls="collapseReviewFilter">
                 <span>Review</span>
                 <span class="fs-4">
                   <i class="fa-solid fa-chevron-right"></i>
                 </span>
               </div>
 
-              <div class="" id="collapseSizeFilter">
+              <div class="" id="collapseReviewFilter">
                 <div class="card card-body border-brand-1 rounded-4 p-4">
                   <div class="mb-4 radio-btn d-flex gap-2 gap-lg-2 gap-xl-0 gap-xxl-1">
                     <input name="ratingWise" type="radio" id="oneStar" />
@@ -1140,7 +1140,7 @@
             <div class="d-flex gap-4">
               <div class="d-inline-block d-flex align-items-center gap-3 text-color bg-white border-0 px-4 rounded-3">
                 <i class="fa-regular fa-paper-plane"></i>
-                <input class="subscribe-email-input border-0" type="email" name="" id=""
+                <input class="subscribe-email-input w-100 border-0" type="email" name="" id=""
                   placeholder="Your email address..." required />
               </div>
               <input type="submit" value="Submit Now" class="btn button rounded-2" />

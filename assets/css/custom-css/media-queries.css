@@ -50,6 +50,25 @@
   .clients-review h1 {
     font-size: 3rem !important;
   }
+  .add-to-cart-bottom-banner {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-item-single .card-item-info h3 {
+    font-size: 1.4rem !important;
+  }
+  .card-item-single .card-item-info h4,
+  .card-item-single .card-item-info .stars,
+  .card-item-single .card-item-info button {
+    font-size: 1.3rem !important;
+  }
+  .card-item-single .card-item-count {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    width: 8rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -59,6 +78,13 @@
 
   .sec-title {
     font-size: 2.5rem;
+  }
+  .add-to-cart-bottom-banner {
+    padding: 2rem;
+  }
+  .home-banner .carousel-inner .carousel-caption {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 }
 
@@ -74,6 +100,9 @@
 @media (max-width: 400px) {
   html {
     font-size: 55%;
+  }
+  .home-banner .carousel-inner h1 {
+    font-size: 1.8rem;
   }
   .popular-brands h1 {
     font-size: 3.5rem !important;
