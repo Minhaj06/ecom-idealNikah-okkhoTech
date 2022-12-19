@@ -1,3 +1,20 @@
+$(document).ready(function () {
+  $(".mobile-dropdown").click(function () {
+    $(".mobile-submenu").toggleClass("hide");
+  });
+
+  $(".level-two-mobile-dropdown").click(function () {
+    $(".level-two-mobile-submenu").toggleClass("hide");
+  });
+
+  // Toggle Mobile Menu
+  $(".menu-icon").click(function () {
+    $(".mobile-menu").toggleClass("show-menu");
+  });
+});
+
+// menu - icon;
+
 // Single Product Page Swiper Slider
 var swiper = new Swiper(".mySwiper", {
   loop: false,

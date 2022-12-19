@@ -1,0 +1,81 @@
+@media (max-width: 991.98px) {
+  header.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1030;
+    background-color: var(--white);
+  }
+
+  #main {
+    padding-top: 7rem;
+  }
+
+  .home-banner .carousel-inner h1 {
+    font-size: 3rem;
+  }
+
+  .offer-banner .carousel-inner h1 {
+    font-size: 3rem !important;
+  }
+
+  .product-details-tabs .nav-pills .nav-link {
+    padding: 1rem 2rem;
+  }
+
+  .top-categories {
+    padding-top: 11rem !important;
+    margin-bottom: -9rem;
+  }
+
+  .per-page-filter-area {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #main {
+    padding-top: 5rem;
+  }
+  .home-banner .carousel-inner h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .offer-banner .carousel-inner h1 {
+    font-size: 2rem !important;
+  }
+  .payment-methods h1 {
+    font-size: 3rem !important;
+  }
+  .clients-review h1 {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .mobile-menu {
+    top: 5rem;
+  }
+
+  .sec-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 58%;
+  }
+  .header {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+  .popular-brands h1 {
+    font-size: 3.5rem !important;
+  }
+}

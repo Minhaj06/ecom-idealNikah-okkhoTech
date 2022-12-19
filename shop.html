@@ -1,1201 +1,1257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <title>IdealNikah</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <body>
-    <!-- Header Starts Here -->
-    <header class="header" id="header">
-      <div class="container">
-        <!-- topbar -->
-        <div
-          class="topbar d-lg-flex justify-content-between align-items-center border-bottom py-3"
-        >
-          <!-- logo -->
-          <a href="">
-            <img src="images/logo.svg" alt="" class="logo" />
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>Shop - IdealNikah</title>
+</head>
+
+<body>
+
+  <!-- Mobile Menu Starts Here -->
+  <nav class="mobile-menu d-lg-none hide-menu" style="z-index: 1020">
+    <div class="container">
+      <ul class="menu text-capitalize">
+        <li class="nav-item mb-4">
+          <a class="" href="">home</a>
+        </li>
+        <li class="nav-item mb-4">
+          <a class="" href="">about</a>
+        </li>
+        <li class="nav-item mb-4">
+          <a class="" href="">shop</a>
+        </li>
+        <li class="nav-item mb-4">
+          <a class="" href="">vendors</a>
+        </li>
+        <li class="nav-item mb-4">
+          <a class=" mobile-dropdown" href="javascript: void(0)">
+            browse all categories
+            <i class="fa-solid fa-chevron-right fs-5 ms-3"></i>
           </a>
 
-          <!-- search box -->
-          <div class="search-box position-relative fs-3">
-            <input
-              class="px-4 py-3 rounded-3 w-100"
-              type="search"
-              name=""
-              id=""
-              placeholder="Search..."
-            />
-            <button class="btn fs-3 position-absolute top-0 end-0 h-100 pt-3 pe-3 text-color">
-              <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
-            </button>
-          </div>
-
-          <!-- icons -->
-          <div
-            class="topbar-icons text-capitalize d-flex justify-content-end align-items-center gap-5"
-          >
-            <div class="topbar-icon-group">
-              <a class="text-black" href="">
-                <div class="floating-text-icon d-inline-block position-relative">
-                  <i class="fa-regular fa-heart"></i>
-                  <span class="floating-num">5</span>
-                </div>
-                <span class="icon-name">wishlist</span>
+          <ul class="mobile-submenu hide">
+            <li class="nav-item mb-4">
+              <a class="" href="">Laptop</a>
+            </li>
+            <li class="nav-item mb-4">
+              <a class="" href="">Laptop</a>
+            </li>
+            <li class="nav-item mb-4">
+              <a class="" href="">Laptop</a>
+            </li>
+            <li class="nav-item mb-4">
+              <a class=" level-two-mobile-dropdown" href="javascript: void(0)">
+                Laptop
+                <i class="fa-solid fa-chevron-right fs-5 ms-3"></i>
               </a>
-            </div>
-            <div class="topbar-icon-group">
-              <a class="text-black" href="">
-                <div class="floating-text-icon d-inline-block position-relative">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <span class="floating-num">5</span>
-                </div>
-                <span class="icon-name">cart</span>
-              </a>
-            </div>
-            <a href="" class="btn button fs-2"> login <i class="fa-regular fa-user"></i> </a>
-          </div>
-        </div>
 
-        <!-- menubar -->
-        <div class="row align-items-center menubar border-bottom py-3">
-          <div class="col-lg-3">
-            <a href="" class="btn button p-3">
-              <i class="fa-solid fa-table-cells-large"></i>
-              browse all catagories
-            </a>
-          </div>
-
-          <div class="col-lg-9">
-            <ul class="menu text-capitalize">
-              <li class="d-inline-block me-5">
-                <a href="">home</a>
-              </li>
-              <li class="d-inline-block me-5">
-                <a href="">about</a>
-              </li>
-              <li class="d-inline-block me-5">
-                <a href="">shop</a>
-              </li>
-              <li class="d-inline-block me-5">
-                <a href="">vendors</a>
-              </li>
-              <li class="d-inline-block me-5">
-                <a href="">mega menu</a>
-              </li>
-              <li class="d-inline-block me-5">
-                <a href="">contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Header Ends Here -->
-
-    <!-- Top Categories Start Here -->
-    <div class="top-categories container text-center py-5 border-bottom font-weight-500">
-      <ul class="menu text-capitalize">
-        <li class="d-inline-block me-5">
-          <a href="">mens cloth & shoes</a>
+              <ul class="level-two-mobile-submenu hide">
+                <li class="nav-item mb-4">
+                  <a class="" href="">Laptop</a>
+                </li>
+                <li class="nav-item mb-4">
+                  <a class="" href="">Laptop</a>
+                </li>
+                <li class="nav-item mb-4">
+                  <a class="" href="">Laptop</a>
+                </li>
+                <li class="nav-item mb-4">
+                  <a class="" href="">Laptop</a>
+                </li>
+                <li class="nav-item mb-4">
+                  <a class="" href="">Laptop</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mb-4">
+              <a class="" href="">Laptop</a>
+            </li>
+          </ul>
         </li>
-        <li class="d-inline-block me-5">
-          <a href="">women cloth & shoes</a>
-        </li>
-        <li class="d-inline-block me-5">
-          <a href="">bridal dress</a>
-        </li>
-        <li class="d-inline-block me-5">
-          <a href="">cosmetics</a>
-        </li>
-        <li class="d-inline-block me-5">
-          <a href="">ornaments</a>
-        </li>
-        <li class="d-inline-block me-5">
-          <a href="">bag & parse</a>
+        <li class="nav-item mb-4">
+          <a class="" href="">contact us</a>
         </li>
       </ul>
+
+      <div class="search-box position-relative fs-3 overflow-hidden">
+        <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+        <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
+          <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+        </button>
+      </div>
+
     </div>
-    <!-- Top Categories End Here -->
+  </nav>
+  <!-- Mobile Menu Ends Here -->
 
-    <!-- Main Contents Start Here -->
-    <main class="main text-capitalize" id="main">
-      <section class="container">
-        <div class="row g-4 g-xl-5 mb-5">
-          <!-- Filter Area -->
-          <div class="filter-area col-lg-4 col-xxl-3">
-            <div class="bg-brand-light rounded-5 p-4 p-xl-5">
-              <h3 class="fs-1 border-bottom-brand-1 text-color-dark font-weight-500 pb-3 mb-4">
-                Shop By
-              </h3>
+  <!-- Header Starts Here -->
+  <header class="header" id="header">
+    <div class="container">
 
-              <!-- Category Wise Product Filter -->
-              <div class="cat-wise mb-5">
-                <div
-                  class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseCategoryFilter"
-                  aria-expanded="true"
-                  aria-controls="collapseCategoryFilter"
-                >
-                  <span>categories</span>
-                  <span>
-                    <i class="fa-solid fa-chevron-up"></i>
-                  </span>
-                </div>
+      <!-- topbar -->
+      <div class="topbar row gx-0 gy-3 justify-content-between align-items-center border-bottom py-3 w-100">
+        <!-- logo -->
+        <a class="col-3 col-lg-3 col-xl-4" href="">
+          <img src="images/logo.svg" alt="" class="logo" />
+        </a>
 
-                <div class="" id="collapseCategoryFilter">
-                  <div class="card card-body border-brand-1 rounded-4 p-4">
-                    <ul class="collapse-list">
-                      <li class="border-bottom pb-1 mb-4">
-                        <a href="">formal shirt</a>
-                      </li>
-                      <li class="border-bottom pb-1 mb-4">
-                        <a href="">t-shirt</a>
-                      </li>
-                      <li class="border-bottom pb-1 mb-4">
-                        <a href="">blezzer</a>
-                      </li>
-                      <li class="border-bottom pb-1 mb-4">
-                        <a href="">punjabi</a>
-                      </li>
-                      <li class="border-bottom pb-1 mb-4">
-                        <a href="">pant</a>
-                      </li>
-                      <li class="border-bottom pb-1 mb-4">
-                        <a href="">kurta</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Price Wise Product Filter -->
-              <div class="cat-wise mb-5">
-                <div
-                  class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapsePriceFilter"
-                  aria-expanded="true"
-                  aria-controls="collapsePriceFilter"
-                >
-                  <span>Price Range</span>
-                  <span>
-                    <i class="fa-solid fa-chevron-up"></i>
-                  </span>
-                </div>
-
-                <div class="" id="collapsePriceFilter">
-                  <div class="position-relative">
-                    <div class="range-selector-wrapper">
-                      <input
-                        type="range"
-                        class="range-slider"
-                        id="priceRange"
-                        min="1"
-                        max="100"
-                        value="50"
-                      />
-                      <div class="range-selector">
-                        <div class="range-selector-btn"></div>
-                        <div class="range-selected-value"></div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center">
-                      <span>100৳</span>
-                      <span class="brand-color">10000৳</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Size Wise Product Filter -->
-              <div class="cat-wise mb-5">
-                <div
-                  class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSizeFilter"
-                  aria-expanded="true"
-                  aria-controls="collapseSizeFilter"
-                >
-                  <span>Size</span>
-                  <span>
-                    <i class="fa-solid fa-chevron-up"></i>
-                  </span>
-                </div>
-
-                <div class="" id="collapseSizeFilter">
-                  <div class="card card-body border-brand-1 rounded-4 p-4">
-                    <div class="mb-4 radio-btn d-flex gap-3">
-                      <input name="priceWise" type="radio" id="sizeL" />
-                      <label for="sizeL">L</label>
-                      <input name="priceWise" type="radio" id="sizeM" />
-                      <label for="sizeM">M</label>
-                      <input name="priceWise" type="radio" id="sizeN" checked />
-                      <label for="sizeN">N</label>
-                      <input name="priceWise" type="radio" id="sizeXL" />
-                      <label for="sizeXL">XL</label>
-                      <input name="priceWise" type="radio" id="sizeXXl" />
-                      <label for="sizeXXl">M</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Rating Wise Product Filter -->
-              <div class="cat-wise mb-5">
-                <div
-                  class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSizeFilter"
-                  aria-expanded="true"
-                  aria-controls="collapseSizeFilter"
-                >
-                  <span>Review</span>
-                  <span>
-                    <i class="fa-solid fa-chevron-up"></i>
-                  </span>
-                </div>
-
-                <div class="" id="collapseSizeFilter">
-                  <div class="card card-body border-brand-1 rounded-4 p-4">
-                    <div class="mb-4 radio-btn d-flex gap-3">
-                      <input name="ratingWise" type="radio" id="oneStar" />
-                      <label for="oneStar">1<i class="fa-regular fa-star"></i></label>
-                      <input name="ratingWise" type="radio" id="twoStar" />
-                      <label for="twoStar">2<i class="fa-regular fa-star"></i></label>
-                      <input name="ratingWise" type="radio" id="threeStar" />
-                      <label for="threeStar">3<i class="fa-regular fa-star"></i></label>
-                      <input name="ratingWise" type="radio" id="fourStar" checked />
-                      <label for="fourStar">4<i class="fa-regular fa-star"></i></label>
-                      <input name="ratingWise" type="radio" id="fiveStar" />
-                      <label for="fiveStar">5<i class="fa-regular fa-star"></i></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <button class="btn button w-100 fs-3">apply now</button>
-            </div>
-          </div>
-
-          <!-- Product List Area -->
-          <div class="content-area col-lg-8 col-xxl-9">
-            <div class="">
-              <div class="row mb-5">
-                <div class="col-12 d-flex justify-content-between align-items-center fs-2">
-                  <div class="per-page-filter">
-                    <label class="" for="per_page">show per page=</label>
-                    <select class="" name="per_page" id="per_page">
-                      <option value="20">20</option>
-                      <option value="30">30</option>
-                      <option value="40">40</option>
-                      <option value="50">50</option>
-                    </select>
-                  </div>
-                  <div class="">115 products found</div>
-                </div>
-              </div>
-
-              <div class="row g-4 mb-5">
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-1.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">shoes</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          simple coverce for all time wearing.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">latest</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-2.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">side bag</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          this bag is full custom leather.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1300.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">40%off</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-3.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">short coart</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          looking simple cofort to wear.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1499.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">new</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-4.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">makeup box</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          full set makeup box.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">20%off</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-1.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">shoes</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          simple coverce for all time wearing.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">latest</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-2.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">side bag</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          this bag is full custom leather.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1300.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">40%off</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-3.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">short coart</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          looking simple cofort to wear.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1499.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">new</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-4.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">makeup box</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          full set makeup box.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">20%off</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-1.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">shoes</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          simple coverce for all time wearing.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">latest</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-2.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">side bag</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          this bag is full custom leather.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1300.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">40%off</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-3.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">short coart</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          looking simple cofort to wear.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1499.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">new</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-4.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">makeup box</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          full set makeup box.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">20%off</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-1.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">shoes</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          simple coverce for all time wearing.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">latest</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-2.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">side bag</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          this bag is full custom leather.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1300.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">40%off</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-3.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">short coart</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          looking simple cofort to wear.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1499.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">new</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-4.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">makeup box</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          full set makeup box.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">20%off</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-1.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">shoes</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          simple coverce for all time wearing.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">latest</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-2.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">side bag</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          this bag is full custom leather.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1300.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">40%off</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-3.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">short coart</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          looking simple cofort to wear.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1499.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">new</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-sm-6 col-xl-4">
-                  <a href="">
-                    <div
-                      class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden"
-                    >
-                      <div class="text-center">
-                        <img
-                          src="images/popular-product-4.png"
-                          alt=""
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <div>
-                        <h5 class="mb-3">makeup box</h5>
-                        <h4 class="text-color-dark font-weight-600 mb-4">
-                          full set makeup box.
-                        </h4>
-                        <div class="stars fs-4 mb-4">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star not-given"></i>
-                          <span class="text-color">(4.0)</span>
-                        </div>
-                        <h4 class="text-black">
-                          ৳1500.00
-                          <sub class="text-color text-decoration-line-through">৳1900.00</sub>
-                        </h4>
-                      </div>
-
-                      <div class="offer-highlight">20%off</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination pagination-lg">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- search box -->
+        <div class="d-none d-lg-block col-lg-4 col-xl-4 search-box position-relative fs-3 overflow-hidden">
+          <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+          <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
+            <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+          </button>
         </div>
-      </section>
 
-      <!-- News Later Starts Here -->
-      <section class="add-to-cart-bottom-banner container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="lh-base text-capitalize fs-1 mb-5">
-              your marrige is important for us, so shoping with us. a trustable online shop
-            </h2>
-
-            <p class="lh-base text-capitalize mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed tellus ac
-              fermentum ullamcorper praesent molestie.
-            </p>
-
-            <form action="">
-              <div class="d-flex gap-4">
-                <div
-                  class="d-inline-block d-flex align-items-center gap-3 text-color bg-white border-0 px-4 rounded-3"
-                >
-                  <i class="fa-regular fa-paper-plane"></i>
-                  <input
-                    class="subscribe-email-input border-0"
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Your email address..."
-                    required
-                  />
-                </div>
-                <input type="submit" value="Submit Now" class="btn button rounded-2" />
+        <!-- icons -->
+        <div
+          class="col-8 col-lg-5 col-xl-4 topbar-icons text-capitalize d-flex justify-content-center justify-content-lg-end align-items-center gap-5 g-0">
+          <div class="topbar-icon-group">
+            <a class="text-color-dark" href="">
+              <div class="floating-text-icon d-inline-block position-relative">
+                <i class="fa-regular fa-heart"></i>
+                <span class="floating-num">5</span>
               </div>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- News Later Ends Here -->
-    </main>
-    <!-- Main Contents End Here -->
-
-    <!-- Footer Starts Here -->
-    <footer class="footer bg-brand py-5">
-      <div class="container text-capitalize">
-        <div class="row mb-5">
-          <div class="col-lg-3">
-            <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
-            <ul class="fs-3">
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">about us</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">How to Buy</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Contact Us</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">idealNikah Blog</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3">
-            <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
-            <ul class="fs-3">
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Login</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Wish List</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Order History</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Order Tracking</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3">
-            <h3 class="fs-1 font-weight-normal mb-5 pb-4">Ideal Nikah</h3>
-            <ul class="fs-3">
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Privacy Policy</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Shipping Policy</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Payment Policy</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Returns & Refunds</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="" class="nav-link">Terms & Conditions </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3">
-            <h3 class="fs-1 font-weight-normal mb-5 pb-4">join with us</h3>
-
-            <div class="d-flex align-items-center gap-5 py-5">
-              <h3 class="fs-2 font-weight-normal">Contact By</h3>
-              <div>
-                <a href="" class="text-white fs-2 me-3">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="" class="text-white fs-2 me-3">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="" class="text-white fs-2 me-3">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="" class="text-white fs-2 me-3">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-
-            <a href="">
-              <img class="footer-logo" src="images/footer-logo.svg" alt="" />
+              <span class="icon-name d-none d-sm-block">wishlist</span>
             </a>
           </div>
+          <div class="topbar-icon-group">
+            <a class="text-color-dark" href="">
+              <div class="floating-text-icon d-inline-block position-relative">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="floating-num">5</span>
+              </div>
+              <span class="icon-name d-none d-sm-block">cart</span>
+            </a>
+          </div>
+          <a href="" class="btn button fs-2">
+            <span class="d-none d-sm-inline">login</span>
+            <i class="fa-regular fa-user"></i>
+          </a>
         </div>
 
-        <div class="row">
-          <div class="col-12 fs-2 text-center">Copyright © 2022 idealnikah.com</div>
+        <div class="col-1 d-lg-none text-end text-black">
+          <span class="menu-icon" role="button" style="font-size: 3.5rem">
+            <i class="fa-solid fa-bars d-block"></i>
+          </span>
+        </div>
+
+      </div>
+
+      <!-- menubar -->
+      <div class="d-none d-lg-flex row align-items-center menubar border-bottom py-3">
+        <div class="col-md-3 dropdown-button">
+          <a href="" class="btn button p-3">
+            <i class="fa-solid fa-table-cells-large"></i>
+            browse all catagories
+          </a>
+
+          <ul class="sub-menu shadow-lg">
+            <li class="nav-item">
+              <a href="" class="nav-link">Desktop</a>
+            </li>
+
+
+            <li class="nav-item level-two-dropdown-button">
+              <a href="" class="nav-link">
+                Laptop <i class="fa-solid fa-chevron-right"></i>
+              </a>
+
+              <ul class="level-two-sub-menu shadow-lg">
+                <li class="nav-item">
+                  <a href="" class="nav-link">HP</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Dell</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Asus</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Lenovo</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">MSI</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Gigabyte</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item level-two-dropdown-button">
+              <a href="" class="nav-link">
+                Mobile <i class="fa-solid fa-chevron-right"></i>
+              </a>
+
+              <ul class="level-two-sub-menu shadow-lg">
+                <li class="nav-item">
+                  <a href="" class="nav-link">HP</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Dell</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Asus</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Lenovo</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">MSI</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Gigabyte</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">Component</a>
+            </li>
+
+            <li class="nav-item level-two-dropdown-button">
+              <a href="" class="nav-link">
+                Monitor <i class="fa-solid fa-chevron-right"></i>
+              </a>
+
+              <ul class="level-two-sub-menu shadow-lg">
+                <li class="nav-item">
+                  <a href="" class="nav-link">HP</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Dell</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Asus</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Lenovo</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">MSI</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Gigabyte</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">UPS</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Tablet</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Office equipment</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Camera</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Security</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Networking</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9">
+          <ul class="menu text-capitalize">
+            <li class="d-inline-block me-4 me-lg-5">
+              <a href="">home</a>
+            </li>
+            <li class="d-inline-block me-4 me-lg-5">
+              <a href="">about</a>
+            </li>
+            <li class="d-inline-block me-4 me-lg-5">
+              <a href="">shop</a>
+            </li>
+            <li class="d-inline-block me-4 me-lg-5">
+              <a href="">vendors</a>
+            </li>
+            <li class="d-inline-block me-4 me-lg-5">
+              <a href="">mega menu</a>
+            </li>
+            <li class="d-inline-block me-4 me-lg-5">
+              <a href="">contact us</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <!-- Footer Ends Here -->
+    </div>
+  </header>
+  <!-- Header Ends Here -->
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+  <!-- Top Categories Start Here -->
+  <div class="top-categories container text-center pt-5 pb-4 border-bottom font-weight-500">
+    <ul class="menu text-capitalize">
+      <li class="d-inline-block me-4 mb-3">
+        <a href="">mens cloth & shoes</a>
+      </li>
+      <li class="d-inline-block me-4 mb-3">
+        <a href="">women cloth & shoes</a>
+      </li>
+      <li class="d-inline-block me-4 mb-3">
+        <a href="">bridal dress</a>
+      </li>
+      <li class="d-inline-block me-4 mb-3">
+        <a href="">cosmetics</a>
+      </li>
+      <li class="d-inline-block me-4 mb-3">
+        <a href="">ornaments</a>
+      </li>
+      <li class="d-inline-block me-4 mb-3">
+        <a href="">bag & parse</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Top Categories End Here -->
+
+  <!-- Main Contents Start Here -->
+  <main class="main text-capitalize" id="main">
+    <section class="container">
+      <div class="row g-4 g-md-3 g-xxl-5 mb-5">
+        <!-- Filter Area -->
+        <div class="filter-area col-md-4 col-lg-4 col-xl-3">
+          <div class="bg-brand-light rounded-5 p-4 p-md-3 p-lg-4 p-xxl-5">
+            <h3 class="fs-1 border-bottom-brand-1 text-color-dark font-weight-500 pb-3 mb-4">
+              Shop By
+            </h3>
+
+            <!-- Category Wise Product Filter -->
+            <div class="cat-wise mb-5">
+              <div class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategoryFilter" aria-expanded="true"
+                aria-controls="collapseCategoryFilter">
+                <span>categories</span>
+                <span class="fs-4">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </div>
+
+              <div class="" id="collapseCategoryFilter">
+                <div class="card card-body border-brand-1 rounded-4 p-4">
+                  <ul class="collapse-list">
+                    <li class="border-bottom pb-1 mb-4">
+                      <a class="d-block" href="">formal shirt</a>
+                    </li>
+                    <li class="border-bottom pb-1 mb-4">
+                      <a class="d-block" href="">t-shirt</a>
+                    </li>
+                    <li class="border-bottom pb-1 mb-4">
+                      <a class="d-block" href="">blezzer</a>
+                    </li>
+                    <li class="border-bottom pb-1 mb-4">
+                      <a class="d-block" href="">punjabi</a>
+                    </li>
+                    <li class="border-bottom pb-1 mb-4">
+                      <a class="d-block" href="">pant</a>
+                    </li>
+                    <li class="border-bottom pb-1 mb-4">
+                      <a class="d-block" href="">kurta</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price Wise Product Filter -->
+            <div class="cat-wise mb-5">
+              <div class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapsePriceFilter" aria-expanded="true"
+                aria-controls="collapsePriceFilter">
+                <span>Price Range</span>
+                <span class="fs-4">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </div>
+
+              <div class="" id="collapsePriceFilter">
+                <div class="position-relative">
+                  <div class="range-selector-wrapper">
+                    <input type="range" class="range-slider" id="priceRange" min="1" max="100" value="50" />
+                    <div class="range-selector">
+                      <div class="range-selector-btn"></div>
+                      <div class="range-selected-value"></div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>100৳</span>
+                    <span class="brand-color">10000৳</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Size Wise Product Filter -->
+            <div class="cat-wise mb-5">
+              <div class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSizeFilter" aria-expanded="true"
+                aria-controls="collapseSizeFilter">
+                <span>Size</span>
+                <span class="fs-4">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </div>
+
+              <div class="" id="collapseSizeFilter">
+                <div class="card card-body border-brand-1 rounded-4 p-4">
+                  <div class="mb-4 radio-btn d-flex gap-3 gap-md-2 gap-lg-3">
+                    <input name="priceWise" type="radio" id="sizeL" />
+                    <label for="sizeL">L</label>
+                    <input name="priceWise" type="radio" id="sizeM" />
+                    <label for="sizeM">M</label>
+                    <input name="priceWise" type="radio" id="sizeN" checked />
+                    <label for="sizeN">N</label>
+                    <input name="priceWise" type="radio" id="sizeXL" />
+                    <label for="sizeXL">XL</label>
+                    <input name="priceWise" type="radio" id="sizeXXl" />
+                    <label for="sizeXXl">M</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating Wise Product Filter -->
+            <div class="cat-wise mb-5">
+              <div class="text-color-dark fs-2 font-weight-500 mb-3 d-flex justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSizeFilter" aria-expanded="true"
+                aria-controls="collapseSizeFilter">
+                <span>Review</span>
+                <span class="fs-4">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </div>
+
+              <div class="" id="collapseSizeFilter">
+                <div class="card card-body border-brand-1 rounded-4 p-4">
+                  <div class="mb-4 radio-btn d-flex gap-2 gap-lg-2 gap-xl-0 gap-xxl-1">
+                    <input name="ratingWise" type="radio" id="oneStar" />
+                    <label for="oneStar">1<i class="fa-regular fa-star fs-5"></i></label>
+                    <input name="ratingWise" type="radio" id="twoStar" />
+                    <label for="twoStar">2<i class="fa-regular fa-star fs-5"></i></label>
+                    <input name="ratingWise" type="radio" id="threeStar" />
+                    <label for="threeStar">3<i class="fa-regular fa-star fs-5"></i></label>
+                    <input name="ratingWise" type="radio" id="fourStar" checked />
+                    <label for="fourStar">4<i class="fa-regular fa-star fs-5"></i></label>
+                    <input name="ratingWise" type="radio" id="fiveStar" />
+                    <label for="fiveStar">5<i class="fa-regular fa-star fs-5"></i></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn button w-100 fs-3">apply now</button>
+          </div>
+        </div>
+
+        <!-- Product List Area -->
+        <div class="content-area col-md-8 col-lg-8 col-xl-9">
+          <div class="">
+            <div class="row mb-5">
+              <div class="col-12 d-flex justify-content-between align-items-center fs-2 per-page-filter-area">
+                <div class="per-page-filter">
+                  <label class="" for="per_page">show per page=</label>
+                  <select class="" name="per_page" id="per_page">
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                  </select>
+                </div>
+                <div class="">115 products found</div>
+              </div>
+            </div>
+
+            <div class="row g-2 g-lg-3 g-xxl-4 mb-5">
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-1.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">shoes</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        simple coverce for all time wearing.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">latest</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-2.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">side bag</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        this bag is full custom leather.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1300.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">40%off</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-3.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">short coart</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        looking simple cofort to wear.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1499.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">new</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-4.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">makeup box</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        full set makeup box.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">20%off</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-1.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">shoes</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        simple coverce for all time wearing.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">latest</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-2.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">side bag</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        this bag is full custom leather.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1300.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">40%off</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-3.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">short coart</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        looking simple cofort to wear.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1499.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">new</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-4.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">makeup box</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        full set makeup box.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">20%off</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-1.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">shoes</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        simple coverce for all time wearing.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">latest</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-2.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">side bag</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        this bag is full custom leather.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1300.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">40%off</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-3.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">short coart</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        looking simple cofort to wear.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1499.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">new</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-4.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">makeup box</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        full set makeup box.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">20%off</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-1.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">shoes</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        simple coverce for all time wearing.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">latest</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-2.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">side bag</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        this bag is full custom leather.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1300.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">40%off</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-3.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">short coart</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        looking simple cofort to wear.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1499.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">new</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-4.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">makeup box</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        full set makeup box.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">20%off</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-1.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">shoes</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        simple coverce for all time wearing.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">latest</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-2.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">side bag</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        this bag is full custom leather.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1300.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">40%off</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-3.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">short coart</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        looking simple cofort to wear.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1499.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">new</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-xl-4">
+                <a href="">
+                  <div
+                    class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                    <div class="text-center">
+                      <img src="images/popular-product-4.png" alt="" class="img-fluid mb-4" />
+                    </div>
+                    <div>
+                      <h5 class="mb-3">makeup box</h5>
+                      <h4 class="text-color-dark font-weight-600 mb-4">
+                        full set makeup box.
+                      </h4>
+                      <div class="stars fs-4 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star not-given"></i>
+                        <span class="text-color">(4.0)</span>
+                      </div>
+                      <h4 class="text-black">
+                        ৳1500.00
+                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                      </h4>
+                    </div>
+
+                    <div class="offer-highlight">20%off</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-lg">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Later Starts Here -->
+    <section class="add-to-cart-bottom-banner container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="lh-base text-capitalize fs-1 mb-5">
+            your marrige is important for us, so shoping with us. a trustable online shop
+          </h2>
+
+          <p class="lh-base text-capitalize mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed tellus ac
+            fermentum ullamcorper praesent molestie.
+          </p>
+
+          <form action="">
+            <div class="d-flex gap-4">
+              <div class="d-inline-block d-flex align-items-center gap-3 text-color bg-white border-0 px-4 rounded-3">
+                <i class="fa-regular fa-paper-plane"></i>
+                <input class="subscribe-email-input border-0" type="email" name="" id=""
+                  placeholder="Your email address..." required />
+              </div>
+              <input type="submit" value="Submit Now" class="btn button rounded-2" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- News Later Ends Here -->
+  </main>
+  <!-- Main Contents End Here -->
+
+  <!-- Footer Starts Here -->
+  <footer class="footer bg-brand py-5">
+    <div class="container text-capitalize">
+      <div class="row mb-5 g-5 gx-4 gx-xl-5">
+        <div class="col-6 col-lg-3">
+          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+          <ul class="fs-3">
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">about us</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">How to Buy</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">idealNikah Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+          <ul class="fs-3">
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Wish List</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Order History</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Order Tracking</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+          <ul class="fs-3">
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Privacy Policy</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Shipping Policy</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Payment Policy</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Returns & Refunds</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="nav-link">Terms & Conditions </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">join with us</h3>
+
+          <div class="d-flex align-items-center gap-5 py-5">
+            <h3 class="fs-2 font-weight-normal">Contact By</h3>
+            <div>
+              <a href="" class="text-white fs-2 me-3">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-white fs-2 me-3">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="" class="text-white fs-2 me-3">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="" class="text-white fs-2 me-3">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <a href="">
+            <img class="footer-logo" src="images/footer-logo.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 fs-2 text-center">Copyright © 2022 idealnikah.com</div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Ends Here -->
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
