@@ -70,6 +70,12 @@ a:hover {
   color: var(--brand-color);
 }
 
+.btn:focus,
+input:focus,
+.form-control:focus {
+  box-shadow: none;
+}
+
 img {
   max-width: 100%;
   height: auto;

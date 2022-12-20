@@ -42,6 +42,13 @@
   #main {
     padding-top: 5rem;
   }
+  .header .topbar-icon-group i {
+    font-size: 1.6rem;
+  }
+  .header .topbar-icon-group .icon-name {
+    font-size: 1.5rem;
+  }
+
   .home-banner .carousel-inner h1 {
     width: 100%;
     font-size: 2.5rem;
@@ -109,6 +116,9 @@
 @media (max-width: 400px) {
   html {
     font-size: 55%;
+  }
+  .sidebar {
+    width: 87%;
   }
   .home-banner .carousel-inner h1 {
     font-size: 1.8rem;

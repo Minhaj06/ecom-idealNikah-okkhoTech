@@ -1,15 +1,24 @@
 $(document).ready(function () {
-  $(".mobile-dropdown").click(function () {
-    $(".mobile-submenu").toggleClass("hide");
-  });
+  // $(".mobile-dropdown").click(function () {
+  //   $(".mobile-submenu").toggleClass("hide");
+  // });
+  // $(".level-two-mobile-dropdown").click(function () {
+  //   $(".level-two-mobile-submenu").toggleClass("hide");
+  // });
+  // // Toggle Mobile Menu
+  // $(".menu-icon").click(function () {
+  //   $(".mobile-menu").toggleClass("show-menu");
+  // });
 
-  $(".level-two-mobile-dropdown").click(function () {
-    $(".level-two-mobile-submenu").toggleClass("hide");
-  });
-
-  // Toggle Mobile Menu
+  // Toggle Sidebar
   $(".menu-icon").click(function () {
-    $(".mobile-menu").toggleClass("show-menu");
+    $(".sidebar").toggleClass("show-sidebar");
+    $(".body-wrapper-freeze").toggleClass("d-block");
+  });
+
+  $(".body-wrapper-freeze").click(function () {
+    $(".sidebar").toggleClass("show-sidebar");
+    $(".body-wrapper-freeze").toggleClass("d-block");
   });
 });
 

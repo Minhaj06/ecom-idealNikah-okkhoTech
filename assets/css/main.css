@@ -2,6 +2,6 @@
 @import url("custom-css/variables.css");
 @import url("custom-css/reusable.css");
 @import url("custom-css/header.css");
-@import url("custom-css/footer.css");
 @import url("style.css");
+@import url("custom-css/footer.css");
 @import url("custom-css/media-queries.css");
