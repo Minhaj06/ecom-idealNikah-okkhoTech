@@ -109,38 +109,7 @@
   color: var(--white) !important;
 }
 
-/* Mobile Menu */
-/* .mobile-menu {
-  position: absolute;
-  top: 7rem;
-  left: 0;
-  width: 100%;
-  padding: 3rem 0;
-  background-color: var(--white);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  transition: all 0.4s;
-}
-.mobile-submenu {
-  padding: 1rem 1rem 1rem 3rem;
-}
-.level-two-mobile-submenu {
-  padding: 1rem 1rem 1rem 3rem;
-}
-.hide {
-  display: none !important;
-}
-
-.show-menu {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-} */
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* Tab, Mobile Menu */
+/* Tab, Mobile Menu Start Here */
 .sidebar {
   width: 34rem;
   height: 100vh;
@@ -156,13 +125,6 @@
 
 .show-sidebar {
   left: 0;
-}
-
-.sidebar-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: calc(100vh - 8rem);
 }
 
 .body-wrapper-freeze {
@@ -229,11 +191,6 @@
 .sidebar li:hover a {
   color: var(--brand-color);
 }
-
-/* ul.sidebar-content-item li a {
-  display: block;
-  color: var(--text-color-dark);
-} */
 
 ul.sidebar-content-item li a i {
   color: var(--text-color);
@@ -324,3 +281,4 @@ ul.sidebar-content-item li a:hover {
 .search-form .input-group-text {
   border: 1px solid var(--brand-color);
 }
+/* Tab, Mobile Menu End Here */
