@@ -19,134 +19,184 @@
 
 <body>
 
-  <div class="body-wrapper-freeze d-lg-none"></div>
+
 
   <!-- Tablet, Mobile Menu Start Here -->
-  <div class="sidebar d-lg-none text-capitalize">
+  <div class="d-lg-none">
+    <div class="body-wrapper-freeze"></div>
 
-    <div class="tab-mobile-menu-buttons mb-4">
-      <!-- Nav Pills -->
-      <ul class="nav nav-pills row g-3" role="tablist">
-        <li class="nav-item col-6" role="presentation">
-          <a class="nav-link mb-2 active" data-bs-toggle="tab" href="#menuTab" aria-selected="true" role="tab">
-            <i class="fa-solid fa-bars"></i>
-            MENU
-          </a>
-        </li>
-        <li class="nav-item col-6" role="presentation">
-          <a class="nav-link mb-2" data-bs-toggle="tab" href="#catTab" aria-selected="false" role="tab" tabindex="-1">
-            <i class="fa-solid fa-table-cells-large"></i>
-            categories
-          </a>
-        </li>
-      </ul>
+    <!-- Side Menu -->
+    <div class="sidebar text-capitalize">
 
-    </div>
-
-    <!-- Nav Tabs -->
-    <div class="sidebar-content">
-      <div class="tab-content mt-2 mb-4">
-
-        <div id="menuTab" class="tab-pane active show" role="tabpanel">
-          <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Main Menu</h3>
-
-          <ul class="sidebar-content-item">
-            <li class="nav-item">
-              <a href="">home</a>
-            </li>
-            <li class="nav-item">
-              <a href="">about</a>
-            </li>
-            <li class="nav-item">
-              <a href="">shop</a>
-            </li>
-            <li class="nav-item">
-              <a href="">vendors</a>
-            </li>
-            <li class="nav-item">
-              <a href="">contact us</a>
-            </li>
-          </ul>
-
-        </div>
-
-        <div id="catTab" class="tab-pane" role="tabpanel">
-          <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Categories</h3>
-
-
-          <ul class="side-menu-categories">
-
-            <li class="nav-item"><a href="" class="">tablet</a></li>
-
-            <div class="dropdown">
-              <li class="dropdown-toggle" id="laptopCat" data-bs-toggle="dropdown" aria-expanded="false">
-                <a href="">Laptop</a>
-                <i class="fa-solid fa-chevron-right"></i>
-              </li>
-              <ul class="dropdown-menu w-100" aria-labelledby="laptopCat">
-                <li><a class="dropdown-item" href="#">Lenovo</a></li>
-                <li><a class="dropdown-item" href="#">HP</a></li>
-                <li><a class="dropdown-item" href="#">Asus</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <li class="dropdown-toggle" id="desktopCat" data-bs-toggle="dropdown" aria-expanded="false">
-                <a href="">desktop</a>
-                <i class="fa-solid fa-chevron-right"></i>
-              </li>
-              <ul class="dropdown-menu w-100" aria-labelledby="desktopCat">
-                <li><a class="dropdown-item" href="#">RAM</a></li>
-                <li><a class="dropdown-item" href="#">ROM</a></li>
-                <li><a class="dropdown-item" href="#">SSD</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <li class="dropdown-toggle" id="mobileCat" data-bs-toggle="dropdown" aria-expanded="false">
-                <a href="">mobile</a>
-                <i class="fa-solid fa-chevron-right"></i>
-              </li>
-              <ul class="dropdown-menu w-100" aria-labelledby="mobileCat">
-                <li><a class="dropdown-item" href="#">iPhone</a></li>
-                <li><a class="dropdown-item" href="#">Realme</a></li>
-                <li><a class="dropdown-item" href="#">Samsung</a></li>
-                <li><a class="dropdown-item" href="#">Redmi</a></li>
-                <li><a class="dropdown-item" href="#">Nokia</a></li>
-              </ul>
-            </div>
-
-            <li class="nav-item"><a href="" class="">Monitor</a></li>
-            <li class="nav-item"><a href="" class="">UPS</a></li>
-            <li class="nav-item"><a href="" class="">Office equipment</a></li>
-            <li class="nav-item"><a href="" class="">Camera</a></li>
-
-
-          </ul>
-
-
-
-
-        </div>
+      <div class="tab-mobile-menu-buttons mb-4">
+        <!-- Nav Pills -->
+        <ul class="nav nav-pills row g-3" role="tablist">
+          <li class="nav-item col-6" role="presentation">
+            <a class="nav-link mb-2 active" data-bs-toggle="tab" href="#menuTab" aria-selected="true" role="tab">
+              <i class="fa-solid fa-bars"></i>
+              MENU
+            </a>
+          </li>
+          <li class="nav-item col-6" role="presentation">
+            <a class="nav-link mb-2" data-bs-toggle="tab" href="#catTab" aria-selected="false" role="tab" tabindex="-1">
+              <i class="fa-solid fa-table-cells-large"></i>
+              categories
+            </a>
+          </li>
+        </ul>
 
       </div>
 
-      <div class="sidebar-bottom-items">
-        <a href="" class="btn button fs-3 py-3 d-block rounded-3 mb-4">
-          <span class="d-sm-inline">login</span>
-          <i class="fa-regular fa-user"></i>
-        </a>
+      <!-- Nav Tabs -->
+      <div class="sidebar-content">
+        <div class="tab-content mt-2 mb-4">
 
-        <div class="search-box position-relative fs-3 overflow-hidden">
-          <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
-          <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
-            <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
-          </button>
+          <div id="menuTab" class="tab-pane active show" role="tabpanel">
+            <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Main Menu</h3>
+
+            <ul class="sidebar-content-item">
+              <li class="nav-item">
+                <a href="">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="">shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="">vendors</a>
+              </li>
+              <li class="nav-item">
+                <a href="">contact us</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div id="catTab" class="tab-pane" role="tabpanel">
+            <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Categories</h3>
+
+
+            <ul class="side-menu-categories">
+
+              <li class="nav-item"><a href="" class="">tablet</a></li>
+
+              <div class="dropdown">
+                <li class="dropdown-toggle" id="laptopCat" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="">Laptop</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <ul class="dropdown-menu w-100" aria-labelledby="laptopCat">
+                  <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                  <li><a class="dropdown-item" href="#">HP</a></li>
+                  <li><a class="dropdown-item" href="#">Asus</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <li class="dropdown-toggle" id="desktopCat" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="">desktop</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <ul class="dropdown-menu w-100" aria-labelledby="desktopCat">
+                  <li><a class="dropdown-item" href="#">RAM</a></li>
+                  <li><a class="dropdown-item" href="#">ROM</a></li>
+                  <li><a class="dropdown-item" href="#">SSD</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <li class="dropdown-toggle" id="mobileCat" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="">mobile</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <ul class="dropdown-menu w-100" aria-labelledby="mobileCat">
+                  <li><a class="dropdown-item" href="#">iPhone</a></li>
+                  <li><a class="dropdown-item" href="#">Realme</a></li>
+                  <li><a class="dropdown-item" href="#">Samsung</a></li>
+                  <li><a class="dropdown-item" href="#">Redmi</a></li>
+                  <li><a class="dropdown-item" href="#">Nokia</a></li>
+                </ul>
+              </div>
+
+              <li class="nav-item"><a href="" class="">Monitor</a></li>
+              <li class="nav-item"><a href="" class="">UPS</a></li>
+              <li class="nav-item"><a href="" class="">Office equipment</a></li>
+              <li class="nav-item"><a href="" class="">Camera</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="sidebar-bottom-items">
+          <a href="" class="btn button fs-3 py-3 d-block rounded-3 mb-4">
+            <span class="d-sm-inline">login</span>
+            <i class="fa-regular fa-user"></i>
+          </a>
+
+          <div class="search-box position-relative fs-3 overflow-hidden">
+            <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+            <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
+              <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Bottom Menu -->
+    <div class="bottom-menu py-4 bg-white position-fixed bottom-0 start-0 w-100 border-top">
+      <div class="container">
+        <ul class="d-flex justify-content-around align-items-center">
+          <li class="nav-item">
+            <a href="index.html"><i class="fa-solid fa-house-chimney-window"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="shop.html"><i class="fa-solid fa-shop"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="details.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade p-0" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content py-5 rounded-0">
+
+          <div class="text-end px-5">
+            <span class="fs-1" role="button" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+
+          <div class="modal-body text-center p-4 py-5 p-sm-5">
+
+            <h1 class="text-color-dark text-capitalize font-weight-500 mb-5">Search For Products</h1>
+
+            <form action="" class="search-form">
+              <div class="input-group">
+                <input type="search" class="form-control fs-3 px-4 py-2" placeholder="Search For Products"
+                  aria-describedby="basic-addon2">
+                <span class="input-group-text fs-3 bg-brand text-white" id="basic-addon2">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+            </form>
+
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
 
   </div>
   <!-- Tablet, Mobile Menu End Here -->
@@ -330,22 +380,19 @@
         <div class="col-md-9">
           <ul class="menu text-capitalize">
             <li class="d-inline-block me-4 me-lg-5">
-              <a href="">home</a>
+              <a href="index.html">home</a>
             </li>
             <li class="d-inline-block me-4 me-lg-5">
-              <a href="">about</a>
+              <a href="about.html">about</a>
             </li>
             <li class="d-inline-block me-4 me-lg-5">
-              <a href="">shop</a>
+              <a href="shop.html">shop</a>
             </li>
             <li class="d-inline-block me-4 me-lg-5">
-              <a href="">vendors</a>
+              <a href="vendors.html">vendors</a>
             </li>
             <li class="d-inline-block me-4 me-lg-5">
-              <a href="">mega menu</a>
-            </li>
-            <li class="d-inline-block me-4 me-lg-5">
-              <a href="">contact us</a>
+              <a href="contact.html">contact us</a>
             </li>
           </ul>
         </div>
@@ -1463,67 +1510,73 @@
     <div class="container text-capitalize">
       <div class="row mb-5 g-5 gx-4 gx-xl-5">
         <div class="col-6 col-lg-3">
-          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
-          <ul class="fs-3">
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">about us</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">How to Buy</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Contact Us</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">idealNikah Blog</a>
-            </li>
-          </ul>
+          <div>
+            <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+            <ul class="fs-3">
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">about us</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">How to Buy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">idealNikah Blog</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="col-6 col-lg-3">
-          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
-          <ul class="fs-3">
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Login</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Wish List</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Order History</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Order Tracking</a>
-            </li>
-          </ul>
+          <div>
+            <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+            <ul class="fs-3">
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Wish List</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Order History</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Order Tracking</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col-6 col-lg-3">
-          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
-          <ul class="fs-3">
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Privacy Policy</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Shipping Policy</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Payment Policy</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Returns & Refunds</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="nav-link">Terms & Conditions </a>
-            </li>
-          </ul>
+        <div class="col-6 -flex flex-column align-items-center d-sm-block col-sm-6 col-lg-3">
+          <div>
+            <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+            <ul class="fs-3">
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Privacy Policy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Shipping Policy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Payment Policy</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Returns & Refunds</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="" class="nav-link">Terms & Conditions </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col-6 col-lg-3">
-          <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">join with us</h3>
+        <div class="col-6 -flex flex-column align-items-center d-sm-block col-sm-6 col-lg-3">
+          <div>
+            <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">join with us</h3>
 
-          <div class="d-flex align-items-center gap-5 py-5">
-            <h3 class="fs-2 font-weight-normal">Contact By</h3>
+            <h3 class="fs-2 font-weight-normal mb-2 d-none d-sm-block">Contact By</h3>
             <div>
               <a href="" class="text-white fs-2 me-3">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -1534,15 +1587,9 @@
               <a href="" class="text-white fs-2 me-3">
                 <i class="fa-brands fa-twitter"></i>
               </a>
-              <a href="" class="text-white fs-2 me-3">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
             </div>
           </div>
 
-          <a href="">
-            <img class="footer-logo" src="images/footer-logo.svg" alt="" />
-          </a>
         </div>
       </div>
 

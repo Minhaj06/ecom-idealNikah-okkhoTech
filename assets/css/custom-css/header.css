@@ -141,7 +141,6 @@
 /*  */
 
 /* Tab, Mobile Menu */
-/* @media (max-width: 991.98px) { */
 .sidebar {
   width: 34rem;
   height: 100vh;
@@ -282,4 +281,46 @@ ul.sidebar-content-item li a:hover {
   background: none;
 }
 
-/* } */
+/* Bottom Menu */
+.bottom-menu {
+  z-index: 1030;
+}
+
+.bottom-menu ul li a {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  transition: 0.3s;
+}
+
+.bottom-menu ul li:hover a {
+  color: var(--white);
+  border-color: var(--brand-color);
+  background-color: var(--brand-color);
+}
+
+#searchModal .modal-dialog {
+  margin: 0;
+}
+
+#searchModal .modal-dialog .modal-content {
+  border: none;
+}
+
+.search-form input {
+  border-color: var(--brand-color);
+  color: var(--brand-color);
+}
+
+.search-form input:focus {
+  border-color: var(--brand-color);
+}
+
+.search-form .input-group-text {
+  border: 1px solid var(--brand-color);
+}
